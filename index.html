@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173B6C">
+  <meta name="description" content="面向小学一至二年级零基础儿童的12课家庭与学校英语口语课程。">
+  <title>开口说｜家庭与学校英语口语课</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand" aria-label="课程首页">
+      <span class="brand-mark">HELLO!</span>
+      <span class="brand-title">开口说</span>
+    </div>
+    <div class="top-actions">
+      <button class="ghost-btn" id="teacherToggle" aria-pressed="false">教师提示</button>
+      <button class="ghost-btn" id="printBtn">打印本课</button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="lesson-nav" aria-label="课程目录">
+      <div class="nav-heading">
+        <span>12课入门</span>
+        <small>家庭 · 学校</small>
+      </div>
+      <div class="nav-tabs" role="tablist" aria-label="课程分类">
+        <button class="nav-tab active" data-filter="all">全部</button>
+        <button class="nav-tab" data-filter="home">家庭</button>
+        <button class="nav-tab" data-filter="school">学校</button>
+      </div>
+      <ol id="lessonList" class="lesson-list"></ol>
+    </aside>
+
+    <section class="lesson-stage" aria-live="polite">
+      <div class="lesson-kicker" id="lessonKicker"></div>
+      <div class="lesson-title-row">
+        <div>
+          <h1 id="lessonTitle"></h1>
+          <p id="lessonGoal" class="lesson-goal"></p>
+        </div>
+        <div class="lesson-number" id="lessonNumber"></div>
+      </div>
+
+      <div class="scene-card">
+        <img id="sceneImage" alt="" src="">
+        <div class="scene-prompts">
+          <span class="prompt-label">看图先说</span>
+          <div id="sceneQuestions" class="question-chips"></div>
+        </div>
+      </div>
+
+      <section class="audio-deck" aria-labelledby="audioHeading">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">LISTEN & SPEAK</span>
+            <h2 id="audioHeading">听一听，跟着说</h2>
+          </div>
+          <button id="stopBtn" class="stop-btn" disabled>停止</button>
+        </div>
+        <div class="audio-controls">
+          <button class="audio-btn chinese" data-audio="chinese">
+            <span class="audio-icon">中</span>
+            <span><strong>中文讲解</strong><small>先听懂场景</small></span>
+          </button>
+          <button class="audio-btn tip" data-audio="tips">
+            <span class="audio-icon">音</span>
+            <span><strong>发音技巧</strong><small>嘴形 · 重音 · 连读</small></span>
+          </button>
+          <button class="audio-btn" data-audio="slow">
+            <span class="audio-icon">0.7×</span>
+            <span><strong>慢速跟读</strong><small>句间留停顿</small></span>
+          </button>
+          <button class="audio-btn" data-audio="normal">
+            <span class="audio-icon">1×</span>
+            <span><strong>正常语速</strong><small>自然美式节奏</small></span>
+          </button>
+          <button class="audio-btn" data-audio="fast">
+            <span class="audio-icon">1.25×</span>
+            <span><strong>快速挑战</strong><small>听关键词</small></span>
+          </button>
+        </div>
+        <p id="voiceStatus" class="voice-status">点击任一按钮播放；首次使用请允许浏览器朗读。</p>
+      </section>
+
+      <div class="learning-grid">
+        <section class="dialogue-panel">
+          <div class="section-heading compact">
+            <div>
+              <span class="eyebrow">MINI DIALOGUE</span>
+              <h2>实用小对话</h2>
+            </div>
+            <span class="tap-hint">点句子可单独播放</span>
+          </div>
+          <div id="dialogue" class="dialogue"></div>
+        </section>
+
+        <aside class="practice-panel">
+          <section class="tip-card">
+            <span class="eyebrow">SOUND LIKE THIS</span>
+            <h2>今天这样发音</h2>
+            <div id="pronunciationTips"></div>
+          </section>
+          <section class="swap-card">
+            <span class="eyebrow">SWAP & SAY</span>
+            <h2>换一换，再说一次</h2>
+            <p id="swapPattern" class="swap-pattern"></p>
+            <div id="swapWords" class="swap-words"></div>
+          </section>
+        </aside>
+      </div>
+
+      <section class="teacher-card" id="teacherCard" hidden>
+        <div>
+          <span class="eyebrow">TEACHER NOTE</span>
+          <h2>20分钟课堂流程</h2>
+        </div>
+        <ol id="teacherSteps"></ol>
+        <div class="success-check"><strong>过关标准：</strong><span id="successCheck"></span></div>
+      </section>
+
+      <nav class="lesson-pagination" aria-label="上一课和下一课">
+        <button id="prevLesson">← 上一课</button>
+        <span id="progressText"></span>
+        <button id="nextLesson">下一课 →</button>
+      </nav>
+    </section>
+  </main>
+
+  <footer>
+    <p>建议：每课20分钟，每周2课。先听懂，再模仿，最后换词说自己的话。</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
