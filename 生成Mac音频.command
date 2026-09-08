@@ -13,8 +13,39 @@ if ! command -v say >/dev/null 2>&1; then
   exit 1
 fi
 
-EN_VOICE="$(say -v '?' | awk '$2 ~ /en_US/ {print $1; exit}')"
-ZH_VOICE="$(say -v '?' | awk '$2 ~ /zh_CN/ {print $1; exit}')"
+VOICE_LIST="$(say -v '?')"
+
+pick_voice() {
+  locale="$1"
+  shift
+  for candidate in "$@"; do
+    if printf '%s\n' "$VOICE_LIST" | awk -v name="$candidate" -v lang="$locale" '
+      index($0, name) == 1 && $0 ~ ("[[:space:]]" lang "[[:space:]]") { found=1 }
+      END { exit !found }
+    '; then
+      printf '%s' "$candidate"
+      return
+    fi
+  done
+  printf '%s\n' "$VOICE_LIST" | awk -v lang="$locale" '
+    $0 ~ ("[[:space:]]" lang "[[:space:]]") &&
+    $0 !~ /Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Good News|Jester|Organ|Superstar|Trinoids|Whisper|Wobble|Zarvox/ {
+      line=$0
+      sub("[[:space:]]+" lang ".*$", "", line)
+      sub("[[:space:]]+$", "", line)
+      print line
+      exit
+    }
+  '
+}
+
+# 不再选择列表中的第一个声音；它在不少 Mac 上是机器感很强的 Albert。
+# 优先使用自然美式女声和普通话女声，未安装时再回退到非特效声音。
+EN_VOICE="$(pick_voice en_US Samantha Shelley 'Sandy (English (US))' 'Flo (English (US))' Kathy)"
+ZH_VOICE="$(pick_voice zh_CN Tingting 'Shelley (Chinese (China mainland))' 'Sandy (Chinese (China mainland))' 'Flo (Chinese (China mainland))')"
+
+echo "英文声音：${EN_VOICE:-系统默认}"
+echo "中文声音：${ZH_VOICE:-系统默认}"
 
 echo "开始生成课程音频……"
 count=0

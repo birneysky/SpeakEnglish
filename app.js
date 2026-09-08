@@ -157,7 +157,7 @@ function renderList(){
 
 function renderLesson(){
   const l = lessons[current];
-  stopSpeech();
+  stopSpeech(false);
   $('lessonKicker').textContent = l.unit;
   $('lessonTitle').textContent = l.title;
   $('lessonGoal').textContent = l.zhTitle + '｜' + l.goal;
@@ -174,26 +174,63 @@ function renderLesson(){
   $('prevLesson').disabled = current === 0;
   $('nextLesson').disabled = current === lessons.length - 1;
   $('progressText').textContent = `${current+1} / ${lessons.length}`;
-  document.querySelectorAll('.dialogue-line').forEach(btn => btn.addEventListener('click', () => speakEnglish(l.lines[Number(btn.dataset.line)][1], .9, btn)));
-  document.querySelectorAll('.swap-word').forEach(btn => btn.addEventListener('click', () => speakEnglish(btn.textContent, .82, btn)));
+  document.querySelectorAll('.dialogue-line').forEach(btn => btn.addEventListener('click', () => {
+    const line = l.lines[Number(btn.dataset.line)];
+    speakEnglish(line[1], .96, btn, line[0]);
+  }));
+  document.querySelectorAll('.swap-word').forEach(btn => btn.addEventListener('click', () => speakEnglish(btn.textContent, .9, btn, 'Teacher')));
   renderList();
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
 function selectLesson(index){ current = index; renderLesson(); }
 
-function chooseVoice(lang){
-  const voices = speechSynthesis.getVoices();
-  const exact = voices.find(v => v.lang.toLowerCase() === lang.toLowerCase());
-  return exact || voices.find(v => v.lang.toLowerCase().startsWith(lang.slice(0,2).toLowerCase())) || null;
+const voiceProfiles = {
+  childGirl: ['Sandy', 'Flo', 'Shelley', 'Ava', 'Samantha', 'Zoe'],
+  childBoy: ['Eddy', 'Junior', 'Reed', 'Nathan', 'Aaron', 'Daniel'],
+  adultWoman: ['Samantha', 'Ava', 'Shelley', 'Karen', 'Moira'],
+  adultMan: ['Reed', 'Daniel', 'Aaron', 'Alex', 'Grandpa'],
+  chinese: ['Tingting', 'Meijia', 'Sandy', 'Flo', 'Shelley']
+};
+
+const noveltyVoicePattern = /Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Good News|Jester|Organ|Superstar|Trinoids|Whisper|Wobble|Zarvox/i;
+
+function voiceProfileFor(speaker, lang){
+  if (lang.toLowerCase().startsWith('zh')) return 'chinese';
+  if (['Mia', 'Child'].includes(speaker)) return 'childGirl';
+  if (speaker === 'Ben') return 'childBoy';
+  if (['Mom', 'Teacher'].includes(speaker)) return 'adultWoman';
+  if (speaker === 'Dad') return 'adultMan';
+  return 'adultWoman';
 }
 
-function makeUtterance(text, lang, rate=.95){
+function chooseVoice(lang, speaker='Teacher'){
+  const language = lang.toLowerCase();
+  const family = language.slice(0, 2);
+  const preferred = voiceProfiles[voiceProfileFor(speaker, lang)];
+  const voices = speechSynthesis.getVoices().filter(v => {
+    const voiceLang = v.lang.toLowerCase();
+    return !noveltyVoicePattern.test(v.name) && (voiceLang === language || voiceLang.startsWith(family));
+  });
+  return voices.sort((a, b) => {
+    const aName = a.name.toLowerCase();
+    const bName = b.name.toLowerCase();
+    const aPreference = preferred.findIndex(name => aName.includes(name.toLowerCase()));
+    const bPreference = preferred.findIndex(name => bName.includes(name.toLowerCase()));
+    const aScore = (a.lang.toLowerCase() === language ? 30 : 0) + (a.localService ? 5 : 0) + (aPreference < 0 ? 0 : 100 - aPreference);
+    const bScore = (b.lang.toLowerCase() === language ? 30 : 0) + (b.localService ? 5 : 0) + (bPreference < 0 ? 0 : 100 - bPreference);
+    return bScore - aScore;
+  })[0] || null;
+}
+
+function makeUtterance(text, lang, rate=.95, speaker='Teacher'){
   const u = new SpeechSynthesisUtterance(text);
   u.lang = lang;
   u.rate = rate;
-  u.pitch = lang === 'en-US' ? 1.04 : 1;
-  const voice = chooseVoice(lang);
+  const profile = voiceProfileFor(speaker, lang);
+  u.pitch = profile === 'childGirl' ? 1.08 : profile === 'childBoy' ? 1.02 : 1;
+  u.volume = 1;
+  const voice = chooseVoice(lang, speaker);
   if (voice) u.voice = voice;
   return u;
 }
@@ -205,22 +242,22 @@ function setPlaying(button, on){
   $('stopBtn').disabled = !on;
 }
 
-function stopSpeech(){
+function stopSpeech(announce=true){
   if (window.currentCourseAudio) {
     window.currentCourseAudio.pause();
     window.currentCourseAudio = null;
   }
   if ('speechSynthesis' in window) speechSynthesis.cancel();
   setPlaying(null, false);
-  if ($('voiceStatus')) $('voiceStatus').textContent = '已停止。点击按钮可重新播放。';
+  if (announce && $('voiceStatus')) $('voiceStatus').textContent = '已停止。点击按钮可重新播放。';
 }
 
-function speakEnglish(text, rate, button){
+function speakEnglish(text, rate, button, speaker='Teacher'){
   if (!('speechSynthesis' in window)) return unsupported();
   speechSynthesis.cancel();
-  const u = makeUtterance(text, 'en-US', rate);
+  const u = makeUtterance(text, 'en-US', rate, speaker);
   setPlaying(button, true);
-  $('voiceStatus').textContent = '正在播放美式英语…';
+  $('voiceStatus').textContent = `正在播放 ${speaker} 的自然美式英语…`;
   u.onend = () => { setPlaying(null, false); $('voiceStatus').textContent = '播放完成。可以再听一次或换一种速度。'; };
   u.onerror = () => unsupported();
   speechSynthesis.speak(u);
@@ -234,7 +271,7 @@ function speakSequence(items, button){
   const next = () => {
     if (idx >= items.length) { setPlaying(null, false); $('voiceStatus').textContent = '播放完成。轮到孩子开口啦！'; return; }
     const item = items[idx++];
-    const u = makeUtterance(item.text, item.lang, item.rate);
+    const u = makeUtterance(item.text, item.lang, item.rate, item.speaker);
     u.onend = () => setTimeout(next, item.pause || 180);
     u.onerror = () => { setPlaying(null, false); unsupported(); };
     speechSynthesis.speak(u);
@@ -248,9 +285,12 @@ function unsupported(){
 }
 
 function playMode(mode, button){
-  const l = lessons[current];
   const lessonNo = String(current + 1).padStart(2, '0');
   const fallback = () => playSynthMode(mode, button);
+  // 对话由浏览器逐句切换角色声线；系统声音已下载后可完全离线使用。
+  if (['slow', 'normal', 'fast'].includes(mode) && 'speechSynthesis' in window) {
+    return playSynthMode(mode, button);
+  }
   if (mode === 'tips') {
     return playAudioFiles([
       `assets/audio/lesson-${lessonNo}-tips-cn.m4a`,
@@ -298,16 +338,19 @@ function playSynthMode(mode, button){
   if (mode === 'chinese') {
     const text = `${l.zhTitle}。${l.intro} 今天的过关标准是：${l.check}`;
     $('voiceStatus').textContent = '正在播放中文讲解…';
-    return speakSequence([{text,lang:'zh-CN',rate:.9}], button);
+    return speakSequence([{text,lang:'zh-CN',rate:.92,speaker:'Teacher'}], button);
   }
   if (mode === 'tips') {
     $('voiceStatus').textContent = '正在播放发音技巧…';
-    return speakSequence(l.tipAudio.map(pair => ({text:pair[1],lang:pair[0]==='中文'?'zh-CN':'en-US',rate:pair[0]==='中文'?.88:.7,pause:260})), button);
+    return speakSequence(l.tipAudio.map(pair => ({text:pair[1],lang:pair[0]==='中文'?'zh-CN':'en-US',rate:pair[0]==='中文'?.9:.82,pause:300,speaker:'Teacher'})), button);
   }
-  const rates = {slow:.65, normal:.92, fast:1.2};
-  const pauses = {slow:620, normal:300, fast:100};
-  $('voiceStatus').textContent = mode === 'slow' ? '正在慢速播放，跟着模仿…' : mode === 'fast' ? '快速挑战：注意抓关键词…' : '正在播放正常美式语速…';
-  speakSequence(l.lines.map(line => ({text:line[1],lang:'en-US',rate:rates[mode],pause:pauses[mode]})), button);
+  const rates = {slow:.78, normal:.96, fast:1.08};
+  const pauses = {slow:700, normal:380, fast:220};
+  $('voiceStatus').textContent = mode === 'slow' ? '双角色慢速对话：跟着模仿…' : mode === 'fast' ? '双角色快速挑战：注意抓关键词…' : '正在播放自然美式双角色对话…';
+  speakSequence(l.lines.map((line, index) => ({
+    text:line[1], lang:'en-US', rate:rates[mode], speaker:line[0],
+    pause:pauses[mode] + (index < l.lines.length - 1 && l.lines[index + 1][0] !== line[0] ? 100 : 0)
+  })), button);
 }
 
 document.querySelectorAll('[data-audio]').forEach(btn => btn.addEventListener('click', () => playMode(btn.dataset.audio, btn)));
