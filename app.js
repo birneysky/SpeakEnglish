@@ -175,8 +175,16 @@ function renderLesson(){
   $('nextLesson').disabled = current === lessons.length - 1;
   $('progressText').textContent = `${current+1} / ${lessons.length}`;
   document.querySelectorAll('.dialogue-line').forEach(btn => btn.addEventListener('click', () => {
-    const line = l.lines[Number(btn.dataset.line)];
-    speakEnglish(line[1], .96, btn, line[0]);
+    const lineIndex = Number(btn.dataset.line);
+    const line = l.lines[lineIndex];
+    const lessonNo = String(current + 1).padStart(2, '0');
+    const lineNo = String(lineIndex + 1).padStart(2, '0');
+    playAudioFiles(
+      [`assets/audio/lesson-${lessonNo}/line-${lineNo}.m4a`],
+      btn,
+      () => speakEnglish(line[1], .96, btn, line[0]),
+      {status:'正在播放 Qwen3-TTS 角色音频…', missing:'这句 AI 音频尚未生成，已使用系统声音。'}
+    );
   }));
   document.querySelectorAll('.swap-word').forEach(btn => btn.addEventListener('click', () => speakEnglish(btn.textContent, .9, btn, 'Teacher')));
   renderList();
@@ -243,6 +251,10 @@ function setPlaying(button, on){
 }
 
 function stopSpeech(announce=true){
+  if (window.currentCourseTimer) {
+    clearTimeout(window.currentCourseTimer);
+    window.currentCourseTimer = null;
+  }
   if (window.currentCourseAudio) {
     window.currentCourseAudio.pause();
     window.currentCourseAudio = null;
@@ -285,11 +297,26 @@ function unsupported(){
 }
 
 function playMode(mode, button){
+  const l = lessons[current];
   const lessonNo = String(current + 1).padStart(2, '0');
   const fallback = () => playSynthMode(mode, button);
-  // 对话由浏览器逐句切换角色声线；系统声音已下载后可完全离线使用。
-  if (['slow', 'normal', 'fast'].includes(mode) && 'speechSynthesis' in window) {
-    return playSynthMode(mode, button);
+  if (['slow', 'normal', 'fast'].includes(mode)) {
+    const files = l.lines.map((_, index) =>
+      `assets/audio/lesson-${lessonNo}/line-${String(index + 1).padStart(2, '0')}.m4a`
+    );
+    const playbackRates = {slow:.86, normal:1, fast:1.1};
+    const pauses = {slow:720, normal:400, fast:230};
+    const labels = {
+      slow:'正在播放 Qwen3-TTS 慢速角色对话…',
+      normal:'正在播放 Qwen3-TTS 自然角色对话…',
+      fast:'正在播放 Qwen3-TTS 快速挑战…'
+    };
+    return playAudioFiles(files, button, fallback, {
+      playbackRate:playbackRates[mode],
+      pauseBetween:pauses[mode],
+      status:labels[mode],
+      missing:'本课 AI 音频尚未完整生成，已使用系统声音。'
+    });
   }
   if (mode === 'tips') {
     return playAudioFiles([
@@ -300,7 +327,7 @@ function playMode(mode, button){
   return playAudioFiles([`assets/audio/lesson-${lessonNo}-${mode}.m4a`], button, fallback);
 }
 
-function playAudioFiles(files, button, fallback){
+function playAudioFiles(files, button, fallback, options={}){
   let index = 0;
   let started = false;
   let fallbackCalled = false;
@@ -312,6 +339,7 @@ function playAudioFiles(files, button, fallback){
   setPlaying(button, true);
   const playNext = () => {
     if (index >= files.length) {
+      window.currentCourseAudio = null;
       setPlaying(null, false);
       $('voiceStatus').textContent = '播放完成。轮到孩子开口啦！';
       return;
@@ -319,13 +347,22 @@ function playAudioFiles(files, button, fallback){
     const audio = new Audio(files[index++]);
     audio.onplaying = () => {
       started = true;
-      $('voiceStatus').textContent = '正在播放课程包内的本地音频…';
+      $('voiceStatus').textContent = options.status || '正在播放课程包内的本地音频…';
     };
-    audio.onended = playNext;
+    audio.playbackRate = options.playbackRate || 1;
+    audio.preservesPitch = true;
+    audio.webkitPreservesPitch = true;
+    audio.onended = () => {
+      if (options.pauseBetween && index < files.length) {
+        window.currentCourseTimer = setTimeout(playNext, options.pauseBetween);
+      } else {
+        playNext();
+      }
+    };
     audio.onerror = () => {
       setPlaying(null, false);
       if (!started) useFallback();
-      else $('voiceStatus').textContent = '部分本地音频缺失，请运行“生成Mac音频.command”。';
+      else $('voiceStatus').textContent = options.missing || '部分本地音频缺失，请重新生成本课音频。';
     };
     audio.play().catch(() => { setPlaying(null, false); useFallback(); });
     window.currentCourseAudio = audio;
@@ -344,7 +381,7 @@ function playSynthMode(mode, button){
     $('voiceStatus').textContent = '正在播放发音技巧…';
     return speakSequence(l.tipAudio.map(pair => ({text:pair[1],lang:pair[0]==='中文'?'zh-CN':'en-US',rate:pair[0]==='中文'?.9:.82,pause:300,speaker:'Teacher'})), button);
   }
-  const rates = {slow:.78, normal:.96, fast:1.08};
+  const rates = {slow:.82, normal:.96, fast:1.08};
   const pauses = {slow:700, normal:380, fast:220};
   $('voiceStatus').textContent = mode === 'slow' ? '双角色慢速对话：跟着模仿…' : mode === 'fast' ? '双角色快速挑战：注意抓关键词…' : '正在播放自然美式双角色对话…';
   speakSequence(l.lines.map((line, index) => ({

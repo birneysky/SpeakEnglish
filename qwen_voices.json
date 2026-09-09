@@ -1,0 +1,35 @@
+{
+  "_meta": {
+    "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit",
+    "language": "English",
+    "note": "原创角色声线，不模仿或克隆任何真实人物。"
+  },
+  "Mom": {
+    "seed": 1101,
+    "instruct": "A warm American woman in her early thirties with a gentle, caring voice. Speak natural standard American English with relaxed conversational rhythm, clear pronunciation for young learners, and subtle emotion. Avoid announcer cadence, robotic pacing, exaggerated acting, or sing-song delivery."
+  },
+  "Dad": {
+    "seed": 1201,
+    "instruct": "A friendly American father with a calm, reassuring mid-range voice. Speak natural standard American English, relaxed and encouraging, with clear everyday pronunciation for young learners. Avoid announcer cadence, robotic pacing, exaggerated acting, or sing-song delivery."
+  },
+  "Mia": {
+    "seed": 2101,
+    "instruct": "An American girl around eight to ten years old with an unmistakably young, bright, friendly voice. Speak natural standard American English a little slower than ordinary conversation. Articulate every word clearly for beginning English learners, with crisp consonants, complete word endings, gentle pauses, and cheerful childlike energy. Sound like a real little girl, not a teenager or adult. Keep the performance warm and natural, never cartoonish, squeaky, breathy, robotic, exaggerated, or sing-song."
+  },
+  "Ben": {
+    "seed": 2201,
+    "instruct": "A friendly school-age American boy with a clear, sunny voice. Speak natural standard American English with relaxed confidence, age-appropriate conversational rhythm, and clear pronunciation. Keep the performance genuine and restrained, never cartoonish, robotic, or sing-song."
+  },
+  "Child": {
+    "seed": 2301,
+    "instruct": "A cheerful school-age American child with a warm, natural voice. Speak standard American English with relaxed everyday rhythm and clear pronunciation for fellow young learners. Keep the performance genuine and restrained, never cartoonish, robotic, or sing-song."
+  },
+  "Teacher": {
+    "seed": 1301,
+    "instruct": "A kind American elementary-school teacher with a warm, patient voice. Speak natural standard American English, clearly but conversationally, with calm encouragement. Avoid announcer cadence, robotic pacing, exaggerated acting, or sing-song delivery."
+  },
+  "default": {
+    "seed": 1401,
+    "instruct": "A friendly native speaker of standard American English. Speak naturally and conversationally with clear pronunciation for young learners. Avoid announcer cadence, robotic pacing, exaggerated acting, or sing-song delivery."
+  }
+}

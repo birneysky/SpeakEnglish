@@ -1,0 +1,583 @@
+{
+  "generator": "Qwen3-TTS VoiceDesign via MLX-Audio",
+  "model": "mlx-community/Qwen3-TTS-12Hz-1.7B-VoiceDesign-4bit",
+  "generatedAt": "2026-09-09T16:22:05.390766+00:00",
+  "files": [
+    {
+      "file": "lesson-01/line-01.m4a",
+      "lesson": 1,
+      "line": 1,
+      "speaker": "Mom",
+      "text": "Good morning, Mia.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-01/line-02.m4a",
+      "lesson": 1,
+      "line": 2,
+      "speaker": "Mia",
+      "text": "Good morning, Mom.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-01/line-03.m4a",
+      "lesson": 1,
+      "line": 3,
+      "speaker": "Mom",
+      "text": "Did you sleep well?",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-01/line-04.m4a",
+      "lesson": 1,
+      "line": 4,
+      "speaker": "Mia",
+      "text": "Yes, I did.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-01/line-05.m4a",
+      "lesson": 1,
+      "line": 5,
+      "speaker": "Mom",
+      "text": "Time to get up.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-01/line-06.m4a",
+      "lesson": 1,
+      "line": 6,
+      "speaker": "Mia",
+      "text": "Okay. I'm ready!",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-02/line-01.m4a",
+      "lesson": 2,
+      "line": 1,
+      "speaker": "Child",
+      "text": "Can I have some milk, please?",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-02/line-02.m4a",
+      "lesson": 2,
+      "line": 2,
+      "speaker": "Dad",
+      "text": "Sure. Here you are.",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-02/line-03.m4a",
+      "lesson": 2,
+      "line": 3,
+      "speaker": "Child",
+      "text": "Thank you, Dad.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-02/line-04.m4a",
+      "lesson": 2,
+      "line": 4,
+      "speaker": "Dad",
+      "text": "You're welcome.",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-02/line-05.m4a",
+      "lesson": 2,
+      "line": 5,
+      "speaker": "Dad",
+      "text": "Do you want some bread?",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-02/line-06.m4a",
+      "lesson": 2,
+      "line": 6,
+      "speaker": "Child",
+      "text": "Yes, please.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-03/line-01.m4a",
+      "lesson": 3,
+      "line": 1,
+      "speaker": "Mom",
+      "text": "It's raining today.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-03/line-02.m4a",
+      "lesson": 3,
+      "line": 2,
+      "speaker": "Child",
+      "text": "I see the rain.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-03/line-03.m4a",
+      "lesson": 3,
+      "line": 3,
+      "speaker": "Mom",
+      "text": "Put on your raincoat.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-03/line-04.m4a",
+      "lesson": 3,
+      "line": 4,
+      "speaker": "Child",
+      "text": "Where are my boots?",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-03/line-05.m4a",
+      "lesson": 3,
+      "line": 5,
+      "speaker": "Mom",
+      "text": "They're by the door.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-03/line-06.m4a",
+      "lesson": 3,
+      "line": 6,
+      "speaker": "Child",
+      "text": "Got them. Let's go!",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-04/line-01.m4a",
+      "lesson": 4,
+      "line": 1,
+      "speaker": "Child",
+      "text": "Can I help?",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-04/line-02.m4a",
+      "lesson": 4,
+      "line": 2,
+      "speaker": "Mom",
+      "text": "Yes, please.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-04/line-03.m4a",
+      "lesson": 4,
+      "line": 3,
+      "speaker": "Mom",
+      "text": "Set the table, please.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-04/line-04.m4a",
+      "lesson": 4,
+      "line": 4,
+      "speaker": "Child",
+      "text": "Okay. I can do it.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-04/line-05.m4a",
+      "lesson": 4,
+      "line": 5,
+      "speaker": "Mom",
+      "text": "Please bring two cups.",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-04/line-06.m4a",
+      "lesson": 4,
+      "line": 6,
+      "speaker": "Child",
+      "text": "Here they are!",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-05/line-01.m4a",
+      "lesson": 5,
+      "line": 1,
+      "speaker": "Child",
+      "text": "Where is my teddy bear?",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-05/line-02.m4a",
+      "lesson": 5,
+      "line": 2,
+      "speaker": "Dad",
+      "text": "Is it on the sofa?",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-05/line-03.m4a",
+      "lesson": 5,
+      "line": 3,
+      "speaker": "Child",
+      "text": "No, it isn't.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-05/line-04.m4a",
+      "lesson": 5,
+      "line": 4,
+      "speaker": "Dad",
+      "text": "Look under the chair.",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-05/line-05.m4a",
+      "lesson": 5,
+      "line": 5,
+      "speaker": "Child",
+      "text": "There it is!",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-05/line-06.m4a",
+      "lesson": 5,
+      "line": 6,
+      "speaker": "Child",
+      "text": "Thank you for helping me.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-06/line-01.m4a",
+      "lesson": 6,
+      "line": 1,
+      "speaker": "Dad",
+      "text": "How do you feel?",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-06/line-02.m4a",
+      "lesson": 6,
+      "line": 2,
+      "speaker": "Child",
+      "text": "I'm a little tired.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-06/line-03.m4a",
+      "lesson": 6,
+      "line": 3,
+      "speaker": "Dad",
+      "text": "Do you want to rest?",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-06/line-04.m4a",
+      "lesson": 6,
+      "line": 4,
+      "speaker": "Child",
+      "text": "Yes, please.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-06/line-05.m4a",
+      "lesson": 6,
+      "line": 5,
+      "speaker": "Dad",
+      "text": "I'll get you some water.",
+      "seed": 1201
+    },
+    {
+      "file": "lesson-06/line-06.m4a",
+      "lesson": 6,
+      "line": 6,
+      "speaker": "Child",
+      "text": "Thanks, Dad.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-07/line-01.m4a",
+      "lesson": 7,
+      "line": 1,
+      "speaker": "Ben",
+      "text": "Hi! I'm Ben.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-07/line-02.m4a",
+      "lesson": 7,
+      "line": 2,
+      "speaker": "Mia",
+      "text": "Hi, Ben. I'm Mia.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-07/line-03.m4a",
+      "lesson": 7,
+      "line": 3,
+      "speaker": "Ben",
+      "text": "What's your name?",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-07/line-04.m4a",
+      "lesson": 7,
+      "line": 4,
+      "speaker": "Mia",
+      "text": "My name is Mia.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-07/line-05.m4a",
+      "lesson": 7,
+      "line": 5,
+      "speaker": "Ben",
+      "text": "Nice to meet you.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-07/line-06.m4a",
+      "lesson": 7,
+      "line": 6,
+      "speaker": "Mia",
+      "text": "Nice to meet you, too.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-08/line-01.m4a",
+      "lesson": 8,
+      "line": 1,
+      "speaker": "Mia",
+      "text": "May I borrow a pencil?",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-08/line-02.m4a",
+      "lesson": 8,
+      "line": 2,
+      "speaker": "Ben",
+      "text": "Sure. Here you are.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-08/line-03.m4a",
+      "lesson": 8,
+      "line": 3,
+      "speaker": "Mia",
+      "text": "Thank you.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-08/line-04.m4a",
+      "lesson": 8,
+      "line": 4,
+      "speaker": "Ben",
+      "text": "You're welcome.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-08/line-05.m4a",
+      "lesson": 8,
+      "line": 5,
+      "speaker": "Mia",
+      "text": "Here is your pencil.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-08/line-06.m4a",
+      "lesson": 8,
+      "line": 6,
+      "speaker": "Ben",
+      "text": "Thanks!",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-09/line-01.m4a",
+      "lesson": 9,
+      "line": 1,
+      "speaker": "Teacher",
+      "text": "Open your book, please.",
+      "seed": 1301
+    },
+    {
+      "file": "lesson-09/line-02.m4a",
+      "lesson": 9,
+      "line": 2,
+      "speaker": "Child",
+      "text": "Sorry, I don't understand.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-09/line-03.m4a",
+      "lesson": 9,
+      "line": 3,
+      "speaker": "Teacher",
+      "text": "That's okay.",
+      "seed": 1301
+    },
+    {
+      "file": "lesson-09/line-04.m4a",
+      "lesson": 9,
+      "line": 4,
+      "speaker": "Child",
+      "text": "Can you say it again, please?",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-09/line-05.m4a",
+      "lesson": 9,
+      "line": 5,
+      "speaker": "Teacher",
+      "text": "Open your book.",
+      "seed": 1301
+    },
+    {
+      "file": "lesson-09/line-06.m4a",
+      "lesson": 9,
+      "line": 6,
+      "speaker": "Child",
+      "text": "Oh, I understand now.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-10/line-01.m4a",
+      "lesson": 10,
+      "line": 1,
+      "speaker": "Mia",
+      "text": "Can I play with you?",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-10/line-02.m4a",
+      "lesson": 10,
+      "line": 2,
+      "speaker": "Ben",
+      "text": "Sure! Come and play.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-10/line-03.m4a",
+      "lesson": 10,
+      "line": 3,
+      "speaker": "Mia",
+      "text": "What are you playing?",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-10/line-04.m4a",
+      "lesson": 10,
+      "line": 4,
+      "speaker": "Ben",
+      "text": "We are playing catch.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-10/line-05.m4a",
+      "lesson": 10,
+      "line": 5,
+      "speaker": "Ben",
+      "text": "It's your turn.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-10/line-06.m4a",
+      "lesson": 10,
+      "line": 6,
+      "speaker": "Mia",
+      "text": "Great! Here I go!",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-11/line-01.m4a",
+      "lesson": 11,
+      "line": 1,
+      "speaker": "Ben",
+      "text": "What do you have for lunch?",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-11/line-02.m4a",
+      "lesson": 11,
+      "line": 2,
+      "speaker": "Mia",
+      "text": "I have rice and chicken.",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-11/line-03.m4a",
+      "lesson": 11,
+      "line": 3,
+      "speaker": "Mia",
+      "text": "What about you?",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-11/line-04.m4a",
+      "lesson": 11,
+      "line": 4,
+      "speaker": "Ben",
+      "text": "I have a sandwich and an apple.",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-11/line-05.m4a",
+      "lesson": 11,
+      "line": 5,
+      "speaker": "Mia",
+      "text": "Do you like apples?",
+      "seed": 2101
+    },
+    {
+      "file": "lesson-11/line-06.m4a",
+      "lesson": 11,
+      "line": 6,
+      "speaker": "Ben",
+      "text": "Yes, I do!",
+      "seed": 2201
+    },
+    {
+      "file": "lesson-12/line-01.m4a",
+      "lesson": 12,
+      "line": 1,
+      "speaker": "Mom",
+      "text": "How was school today?",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-12/line-02.m4a",
+      "lesson": 12,
+      "line": 2,
+      "speaker": "Child",
+      "text": "It was great!",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-12/line-03.m4a",
+      "lesson": 12,
+      "line": 3,
+      "speaker": "Mom",
+      "text": "What did you learn?",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-12/line-04.m4a",
+      "lesson": 12,
+      "line": 4,
+      "speaker": "Child",
+      "text": "I learned about animals.",
+      "seed": 2301
+    },
+    {
+      "file": "lesson-12/line-05.m4a",
+      "lesson": 12,
+      "line": 5,
+      "speaker": "Mom",
+      "text": "What was your favorite part?",
+      "seed": 1101
+    },
+    {
+      "file": "lesson-12/line-06.m4a",
+      "lesson": 12,
+      "line": 6,
+      "speaker": "Child",
+      "text": "Art class was my favorite.",
+      "seed": 2301
+    }
+  ]
+}
