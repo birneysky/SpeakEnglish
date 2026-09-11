@@ -2,7 +2,7 @@
 
 最简单的使用方法
 1. 解压整个 ZIP 文件，不要只单独取出 index.html。
-2. 双击 index.html。
+2. 双击 index.html 可浏览课程和播放音频；如需录音，请按下方说明启动本地服务器。
 3. 建议使用 Safari、Chrome 或 Edge。
 4. 点击“中文讲解、发音技巧、慢速、正常、快速”即可播放。
 
@@ -10,6 +10,20 @@
 - 中文讲解和发音技巧会优先播放 assets/audio 目录中的本地 M4A 音频。
 - 英文对话优先播放 Qwen3-TTS 生成的逐句 M4A 文件；文件按 assets/audio/lesson-01/line-01.m4a 的结构存放，单句、慢速、正常和快速模式共用同一套自然角色音频。
 - AI 音频缺失时，页面自动使用电脑或手机自带的声音作为应急回退。
+
+跟读录音与对比
+1. 在项目目录打开终端，运行：python3 -m http.server 8000
+2. 浏览器访问：http://localhost:8000
+3. 在“跟读录音，对比发音”区域选择句子，先点击“播放原句”。
+4. 点击“开始录音”并允许使用麦克风，孩子朗读后点击“停止录音”。
+5. 播放自己的录音，再播放原句进行对比。录音只保存在当前浏览器会话，刷新或关闭页面后会清除。
+
+课程资源自动更新
+- 这里的“自动更新”是开发时同步和检查本地资源，不会从网络下载课程或上传本地文件。
+- 课程、图片或音频修改后，双击“更新课程资源.command”，或运行 npm run resources:update。
+- 运行 npm run resources:check 可只检查资源是否完整、清单是否最新，不修改文件。
+- 场景图片统一存放为 assets/images/lesson-01.webp 这样的 WebP 文件。
+- 音频生成脚本会自动刷新 assets/resource-manifest.json，PR 和 main 分支也会自动检查。
 
 在 Apple Silicon Mac 上生成 Qwen3-TTS 音频
 1. 安装 Python 3.10 或更高版本，推荐 Python 3.12。
@@ -31,7 +45,9 @@ index.html、app.js、styles.css 和 assets 目录。旧的“生成Mac音频.co
 目录说明
 - index.html：双击打开课程
 - styles.css / app.js：页面样式和课程内容
-- assets/images：12课场景图片
+- assets/images：12课 WebP 场景图片
 - assets/audio：生成后的本地音频
+- assets/resource-manifest.json：自动生成的课程资源校验清单
 - audio_manifest.tsv：音频台词清单
 - 生成Mac音频.command：使用 macOS 自带语音生成本地音频
+- 更新课程资源.command：检查课程、图片和音频并更新资源清单

@@ -1,0 +1,594 @@
+{
+  "version": 1,
+  "courseSha256": "67ff8757626163e1abeac6cde05c9675aae9ee9c32785c5d7e4a72249f3ac3d0",
+  "lessons": [
+    {
+      "lesson": 1,
+      "title": "Good Morning!",
+      "zhTitle": "起床问早安",
+      "image": {
+        "path": "assets/images/lesson-01.webp",
+        "bytes": 147366,
+        "sha256": "b3a8ba58c872675fa159d549072dfbb2ef77a93d2e6aa21abfc227252e759f2d"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-01/chinese.m4a",
+          "bytes": 43514,
+          "sha256": "6dcb2152d3951b2c8d6240f15877878048f61b54a58c06eb1a1859bba699fb16"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-01/line-01.m4a",
+            "bytes": 8921,
+            "sha256": "799eff5017ebec4a9420b1656f7e97a5f2a1fdaef0ea8d35347b2320647b0eb8"
+          },
+          {
+            "path": "assets/audio/lesson-01/line-02.m4a",
+            "bytes": 8078,
+            "sha256": "a373698610c46f82b54ba4bf2a0e11f59df93b8cecb82e5536f9560e5d84d1f3"
+          },
+          {
+            "path": "assets/audio/lesson-01/line-03.m4a",
+            "bytes": 9649,
+            "sha256": "f3b44004cb33634e943de4f46dd447b40ab3ed0aed5e04ad29a203ee43181a93"
+          },
+          {
+            "path": "assets/audio/lesson-01/line-04.m4a",
+            "bytes": 10536,
+            "sha256": "b0187ebd807b4482e1c3214148dc5327c869e3fdbdb0276975380cce93d38122"
+          },
+          {
+            "path": "assets/audio/lesson-01/line-05.m4a",
+            "bytes": 8373,
+            "sha256": "651e89fa8bb05608e069663fdf1c152b7c24ef5e88d58cdb460ab15ccd164a83"
+          },
+          {
+            "path": "assets/audio/lesson-01/line-06.m4a",
+            "bytes": 12308,
+            "sha256": "6b97c311d219b33c9e7f83f56fffe196e7bec3f6b13967b4d76d08e67aabd92c"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 2,
+      "title": "Can I Have Some Milk?",
+      "zhTitle": "早餐礼貌请求",
+      "image": {
+        "path": "assets/images/lesson-02.webp",
+        "bytes": 160186,
+        "sha256": "db541cb65868dba049e33d166bbce96d133c8933cc690771b1fdbcad353934a0"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-02/chinese.m4a",
+          "bytes": 45509,
+          "sha256": "a19314c3b7523118d77415a28d7b0e210296e565fa8cd95c181ecd4afd37a99b"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-02/line-01.m4a",
+            "bytes": 10417,
+            "sha256": "86eb400427e491d8809456f84aede5f1586216d7ebf7dc6e4937e4a199c77244"
+          },
+          {
+            "path": "assets/audio/lesson-02/line-02.m4a",
+            "bytes": 11762,
+            "sha256": "f59f3a9ca6215442cf8e43be9602106b9542a17129122903536d104799b77a70"
+          },
+          {
+            "path": "assets/audio/lesson-02/line-03.m4a",
+            "bytes": 8111,
+            "sha256": "fecdf0e0dbc055bc92777efe56c05d4a21f5a2a2957fcd46f6ad133177d75615"
+          },
+          {
+            "path": "assets/audio/lesson-02/line-04.m4a",
+            "bytes": 8090,
+            "sha256": "a46d2c74925e2a25db74d51240f1c2f6b11ccbe168e5570af5bc3bc770a2f3e0"
+          },
+          {
+            "path": "assets/audio/lesson-02/line-05.m4a",
+            "bytes": 12517,
+            "sha256": "52e34d414a0c771afa0e84e88c426d455a362619ce796578a853b5a44d4f2332"
+          },
+          {
+            "path": "assets/audio/lesson-02/line-06.m4a",
+            "bytes": 8240,
+            "sha256": "058b01d06aa53b2de3f2d9a57471c419b812c739d64148200b55b883d707c54c"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 3,
+      "title": "It's Raining Today",
+      "zhTitle": "天气与穿衣",
+      "image": {
+        "path": "assets/images/lesson-03.webp",
+        "bytes": 165954,
+        "sha256": "1474de65e9bb022b9738e8c3f0a251d757046b84aecd7e7cab0097dfa201628b"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-03/chinese.m4a",
+          "bytes": 37984,
+          "sha256": "094e00fe0c823e8b0394eed67732ea5aa7a57a0df7f580b7230874a9375d0f3d"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-03/line-01.m4a",
+            "bytes": 10528,
+            "sha256": "b4411cd046f8892e0e14f48c2b4031237c3b743906163a732c61cfc71611f5bc"
+          },
+          {
+            "path": "assets/audio/lesson-03/line-02.m4a",
+            "bytes": 8201,
+            "sha256": "6704eb5904dc923cdd77f554a08c1aa2b92f1ee9561b95db083396865888efed"
+          },
+          {
+            "path": "assets/audio/lesson-03/line-03.m4a",
+            "bytes": 8835,
+            "sha256": "1ba6d42f470aa113fe980ae5687b41d6e8a83974956c342466847f7c8c21f85c"
+          },
+          {
+            "path": "assets/audio/lesson-03/line-04.m4a",
+            "bytes": 9490,
+            "sha256": "3227b8cc8651f14fd45ea019615c1fde53cf6054832e06c3dc2dd247a626f5b7"
+          },
+          {
+            "path": "assets/audio/lesson-03/line-05.m4a",
+            "bytes": 8408,
+            "sha256": "be43c52105dea5e6b362c67e77847425804057f65cf9538b9908dcd9a73e67cf"
+          },
+          {
+            "path": "assets/audio/lesson-03/line-06.m4a",
+            "bytes": 13415,
+            "sha256": "5e7fffeafcd5ced8bff03ee8c47074c23b36e58dabc2d02138db8ceffbbf75be"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 4,
+      "title": "Can I Help?",
+      "zhTitle": "主动帮助家人",
+      "image": {
+        "path": "assets/images/lesson-04.webp",
+        "bytes": 138866,
+        "sha256": "fbcc4e10c1140bc56a3d3c1e460ac5d2ee29703bf59332f9c3c0f5c088ee3d98"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-04/chinese.m4a",
+          "bytes": 40974,
+          "sha256": "86902d48a55ea2a101a4893a6ba223f2bddb2795fb1c17396a99bfc88828b4cd"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-04/line-01.m4a",
+            "bytes": 7737,
+            "sha256": "5f552dc0f4c85265834278ea3e3809b46b28d573c05b0cb7d68f1079a2fd4e60"
+          },
+          {
+            "path": "assets/audio/lesson-04/line-02.m4a",
+            "bytes": 8244,
+            "sha256": "cc83033b2acad65152b18a5a0b90ab6a0c137571264e4d006f688b1fa8e18bc3"
+          },
+          {
+            "path": "assets/audio/lesson-04/line-03.m4a",
+            "bytes": 14649,
+            "sha256": "2511c91c15383ecb0167aaa9a494414f8b870a5644354cd2ce11f835a33c6012"
+          },
+          {
+            "path": "assets/audio/lesson-04/line-04.m4a",
+            "bytes": 10823,
+            "sha256": "1757935a921f97705e3de29a6ab582e9374f69cec8ce9349ea60d41c6e70b140"
+          },
+          {
+            "path": "assets/audio/lesson-04/line-05.m4a",
+            "bytes": 9352,
+            "sha256": "69d2ce45e1b09836c24da9f88ca9da9b57fd1ab6383896db3fb4598a8ea6b241"
+          },
+          {
+            "path": "assets/audio/lesson-04/line-06.m4a",
+            "bytes": 8012,
+            "sha256": "8878b84d1d8aab319763da2c2874adcb631a336868fe411bc1346b207d962694"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 5,
+      "title": "Where Is My Teddy?",
+      "zhTitle": "寻找物品",
+      "image": {
+        "path": "assets/images/lesson-05.webp",
+        "bytes": 164800,
+        "sha256": "5d819585346609a129fc25fa5877eecb7769582fbe951aba3e127da5099a0e19"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-05/chinese.m4a",
+          "bytes": 35212,
+          "sha256": "5522f972b28d7bb8d064b8b9b12ad5dc5ad04195869bc1b7c3bd67e0b04f7413"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-05/line-01.m4a",
+            "bytes": 10298,
+            "sha256": "2282a9671332cc004e922d0d12441702c8e9eedfaaa992db634dd149374c14d9"
+          },
+          {
+            "path": "assets/audio/lesson-05/line-02.m4a",
+            "bytes": 9010,
+            "sha256": "c924c8c85bf7d945fc4625946121d11d47d78b30b72f0f347b75ce950eed3985"
+          },
+          {
+            "path": "assets/audio/lesson-05/line-03.m4a",
+            "bytes": 13049,
+            "sha256": "8ebfc2081f864d5cb2c13db5030df18db9a44c89323c48b332039208885d3a1b"
+          },
+          {
+            "path": "assets/audio/lesson-05/line-04.m4a",
+            "bytes": 10074,
+            "sha256": "3076731b82a1cc7c5223d213494e0eaa460da214f5d82a746066b421178f803b"
+          },
+          {
+            "path": "assets/audio/lesson-05/line-05.m4a",
+            "bytes": 7514,
+            "sha256": "1e81c84230ef34db08e9bba22bd7a1b1ad17fb0a295e43f64cc54ad9ffad8c69"
+          },
+          {
+            "path": "assets/audio/lesson-05/line-06.m4a",
+            "bytes": 10921,
+            "sha256": "5845c29a9efb6484856d1b253327bb725430a046d63fb286b1be5bb9e7181d9d"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 6,
+      "title": "How Do You Feel?",
+      "zhTitle": "表达感受",
+      "image": {
+        "path": "assets/images/lesson-06.webp",
+        "bytes": 153618,
+        "sha256": "ace0380a62b6b4fc5e38d27dcebb193e35e5e385834b332cdccaf33cd79078c1"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-06/chinese.m4a",
+          "bytes": 40650,
+          "sha256": "ea790aa2412753aa3208ea02db75cb0f71fa07e258e95e6cf9cf8bb9c1db5f63"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-06/line-01.m4a",
+            "bytes": 7664,
+            "sha256": "46e318496570c26fdb9643c2ea8b8af4595c11e36781b0b5cf006aed970bdc63"
+          },
+          {
+            "path": "assets/audio/lesson-06/line-02.m4a",
+            "bytes": 15121,
+            "sha256": "0fb245760b7ec5c8f263ab15851a416c872ee376ff6cf28f00164d587d6a7dde"
+          },
+          {
+            "path": "assets/audio/lesson-06/line-03.m4a",
+            "bytes": 10418,
+            "sha256": "2c2e1e2c7d9a2154d787704d3566b8b34f1d5cb597340f81e29e1a13ec54038e"
+          },
+          {
+            "path": "assets/audio/lesson-06/line-04.m4a",
+            "bytes": 8240,
+            "sha256": "e89836afe4cddc71e6840c92facbede0b0fab45c38a39f77aa2a1e9c168a75a6"
+          },
+          {
+            "path": "assets/audio/lesson-06/line-05.m4a",
+            "bytes": 9813,
+            "sha256": "39c1ab184bd62b379b74e6499dadb2cd874b4069b625226731d93a354592870f"
+          },
+          {
+            "path": "assets/audio/lesson-06/line-06.m4a",
+            "bytes": 8156,
+            "sha256": "1dc8482ecfb253548f11bb06fe360634e69a7de365826022240b66ec65971471"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 7,
+      "title": "Nice to Meet You",
+      "zhTitle": "认识新同学",
+      "image": {
+        "path": "assets/images/lesson-07.webp",
+        "bytes": 170790,
+        "sha256": "4eb001649465ad00a6fb00e4bd01d401c61a54c2de824e022e33a8f02aa33bb4"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-07/chinese.m4a",
+          "bytes": 42307,
+          "sha256": "f330d8a6dfc207ee43171069082e29187c9ca44f736d42569f685a3d115fce96"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-07/line-01.m4a",
+            "bytes": 10039,
+            "sha256": "5d7ba1ef0518713ecec4e0f0c2c3ffdf3e05c7654fe7cacd02487b18975fe0c6"
+          },
+          {
+            "path": "assets/audio/lesson-07/line-02.m4a",
+            "bytes": 12952,
+            "sha256": "2249ade13ff584cfd50523f4702347400a9ca91abd3616a0c300acc70f4c1d03"
+          },
+          {
+            "path": "assets/audio/lesson-07/line-03.m4a",
+            "bytes": 8505,
+            "sha256": "263f69b9266cf054dca6142c103ea67d40ba3363d355e0811fdf4e185975a235"
+          },
+          {
+            "path": "assets/audio/lesson-07/line-04.m4a",
+            "bytes": 12139,
+            "sha256": "290971f96868842063bb5aa90634cd2ae6926f8ed1b9d702fe310903f868dd46"
+          },
+          {
+            "path": "assets/audio/lesson-07/line-05.m4a",
+            "bytes": 10190,
+            "sha256": "0e46ad7b27e7019badc58e76a1397cb2935f1afd13a18a558f32b3101157049c"
+          },
+          {
+            "path": "assets/audio/lesson-07/line-06.m4a",
+            "bytes": 10922,
+            "sha256": "bd05351c8d41ad6245de5e6ac14b668b0f921bf1ddb341d3aba5c15afb6ed8b0"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 8,
+      "title": "May I Borrow a Pencil?",
+      "zhTitle": "借用文具",
+      "image": {
+        "path": "assets/images/lesson-08.webp",
+        "bytes": 154334,
+        "sha256": "546412e43807a74b4e386e3e200e54f997e68a017b423726bc5c79f535ef8eda"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-08/chinese.m4a",
+          "bytes": 36326,
+          "sha256": "faf4db5bb7442347f56bdb002db7af181358279560d6798b6f70d7151cf7409f"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-08/line-01.m4a",
+            "bytes": 11158,
+            "sha256": "b8c3b2ea9313f3041955f1b731316847985e8ceada86215027caf8a8867372e6"
+          },
+          {
+            "path": "assets/audio/lesson-08/line-02.m4a",
+            "bytes": 13051,
+            "sha256": "d7a367eda04f655374532718f6a324e3fa512a185b87ccf14bcb5eaa3c7d69c5"
+          },
+          {
+            "path": "assets/audio/lesson-08/line-03.m4a",
+            "bytes": 7226,
+            "sha256": "12486f56d904b9865f0a4aa84ea93611c626e99e0cc5697e2c599ae38a927935"
+          },
+          {
+            "path": "assets/audio/lesson-08/line-04.m4a",
+            "bytes": 7279,
+            "sha256": "401d837a942fd164c00248a70c2583de487df963db86b6fab71b090349af3e21"
+          },
+          {
+            "path": "assets/audio/lesson-08/line-05.m4a",
+            "bytes": 9933,
+            "sha256": "cec5ef84292af8432199a9ab335815764dcd52ca0ed05b062e06710d31770d8e"
+          },
+          {
+            "path": "assets/audio/lesson-08/line-06.m4a",
+            "bytes": 6469,
+            "sha256": "cd0572c5b53d276b6ded4f653971e3c05a2d7a037d73b083cf213b307d63943b"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 9,
+      "title": "I Don't Understand",
+      "zhTitle": "课堂上请求帮助",
+      "image": {
+        "path": "assets/images/lesson-09.webp",
+        "bytes": 149156,
+        "sha256": "d7c468c781f30b2653d0f0e21e35a8b168251e3ae0d6c1704378562a9334849c"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-09/chinese.m4a",
+          "bytes": 41301,
+          "sha256": "e311ba21eedfd1008e8d37b39d9150db3ff4505b3d6eb092cef77c49dc2e2fb5"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-09/line-01.m4a",
+            "bytes": 9548,
+            "sha256": "05d2ada57bbb7b934d4209a48f43f11b70010e00382a73b44ad4b33b4dff288d"
+          },
+          {
+            "path": "assets/audio/lesson-09/line-02.m4a",
+            "bytes": 14996,
+            "sha256": "7eb5b524b8734767d6dd1fd5b3d9d8bed7ef695f7c89c4997ce150e3bb5fd14d"
+          },
+          {
+            "path": "assets/audio/lesson-09/line-03.m4a",
+            "bytes": 8808,
+            "sha256": "f9a2fe356f4a126112b980d39b29064ac1362cce9fcde09bc889c0912c4fef1c"
+          },
+          {
+            "path": "assets/audio/lesson-09/line-04.m4a",
+            "bytes": 12741,
+            "sha256": "df3820a7746acc3ce33402f65e18fda2e5a6921ebd30a90ba9eab1d0853f83bb"
+          },
+          {
+            "path": "assets/audio/lesson-09/line-05.m4a",
+            "bytes": 8059,
+            "sha256": "10b250848345035de5ddb53219336795f3b8c7e33142a9051e2e0bbfa0f8d6d1"
+          },
+          {
+            "path": "assets/audio/lesson-09/line-06.m4a",
+            "bytes": 13456,
+            "sha256": "d131d47ede5ec1d20ea2324fceb2014644da512a82ba91a2f49cb04fa5b9414e"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 10,
+      "title": "Can I Play with You?",
+      "zhTitle": "加入同伴游戏",
+      "image": {
+        "path": "assets/images/lesson-10.webp",
+        "bytes": 218284,
+        "sha256": "44978b6ba40405986194b61f58fae64ad2c8e03d7c96b456cadb4a746d540fb5"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-10/chinese.m4a",
+          "bytes": 38914,
+          "sha256": "42986511e5cfabc31761defba4e74cd5d97b4dcba4662239eca981225fde8505"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-10/line-01.m4a",
+            "bytes": 11233,
+            "sha256": "61aa753ec1399265d1203f02d15e500f138c59c862e775668d6a92b6357784f7"
+          },
+          {
+            "path": "assets/audio/lesson-10/line-02.m4a",
+            "bytes": 11315,
+            "sha256": "6cf2dba51a7f4201717ea8e8a2bf0267d2fa6f2bf491e354c50c1af4224795e3"
+          },
+          {
+            "path": "assets/audio/lesson-10/line-03.m4a",
+            "bytes": 12934,
+            "sha256": "4cbe6cb286dda7397754b19bdf8f9c7515dc48b4ecbbfa376372d7a0d91d8296"
+          },
+          {
+            "path": "assets/audio/lesson-10/line-04.m4a",
+            "bytes": 9552,
+            "sha256": "9b9b88ffcab9b02527b68448d7bb74fd08cd2eea9de1253b0392dcd40d0a3b91"
+          },
+          {
+            "path": "assets/audio/lesson-10/line-05.m4a",
+            "bytes": 9106,
+            "sha256": "f313da9810ddd8f98462ae7908ddc7e6c52150407a9b385293545a911dda089c"
+          },
+          {
+            "path": "assets/audio/lesson-10/line-06.m4a",
+            "bytes": 12325,
+            "sha256": "8bfc3dbd97d69d0e08ea3112d85e7fe2ad58b338f75f106c0bdb1235b9957199"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 11,
+      "title": "What Do You Have for Lunch?",
+      "zhTitle": "聊聊午餐",
+      "image": {
+        "path": "assets/images/lesson-11.webp",
+        "bytes": 153542,
+        "sha256": "885f7d8b2ede121ec1e15ba58dc0a8ed07bde1be45c69008b70a9c825d65e0cf"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-11/chinese.m4a",
+          "bytes": 39277,
+          "sha256": "e609889834bf53a6a5e51b8afd627471ebd1bc73b694848c602eae5622f513be"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-11/line-01.m4a",
+            "bytes": 10610,
+            "sha256": "a53823748a923ad89f30339326037288a907447f2723c860db5f6ac017005502"
+          },
+          {
+            "path": "assets/audio/lesson-11/line-02.m4a",
+            "bytes": 10626,
+            "sha256": "aca29e829f08ceafee5b6457c1df94ba3c28821d6d9971afc100ee5694fb92d9"
+          },
+          {
+            "path": "assets/audio/lesson-11/line-03.m4a",
+            "bytes": 9992,
+            "sha256": "7e7ff9f728f4870dff8947e3cd1d4ebdb1bcf0ce5bcb7e25a92f94a857cf1575"
+          },
+          {
+            "path": "assets/audio/lesson-11/line-04.m4a",
+            "bytes": 14013,
+            "sha256": "6bf8635c12692d766afbdb6109fe6cfee955dea92ebaa2a6e16c48f0831193c8"
+          },
+          {
+            "path": "assets/audio/lesson-11/line-05.m4a",
+            "bytes": 9144,
+            "sha256": "627e4a76d8b2f4fe19f72471a63119e04cc7ff292b50b49625952f5b42b2bdd9"
+          },
+          {
+            "path": "assets/audio/lesson-11/line-06.m4a",
+            "bytes": 9771,
+            "sha256": "34d1133c2f8c42a52ac42e42ae9268d830e3f3a482fbbda2839ab5fdbf6c1be2"
+          }
+        ]
+      }
+    },
+    {
+      "lesson": 12,
+      "title": "How Was School?",
+      "zhTitle": "讲讲今天在学校",
+      "image": {
+        "path": "assets/images/lesson-12.webp",
+        "bytes": 132952,
+        "sha256": "9923432f1cff7fe80e5c4d65d9cc0de927e1b77e23662bf8a176afe16fa08440"
+      },
+      "audio": {
+        "chinese": {
+          "path": "assets/audio/lesson-12/chinese.m4a",
+          "bytes": 41284,
+          "sha256": "da81d4ba50f6c617bd205d9d78c18bdf6973b6270073e3c927ed1ec0016540d8"
+        },
+        "lines": [
+          {
+            "path": "assets/audio/lesson-12/line-01.m4a",
+            "bytes": 9375,
+            "sha256": "b970735eebf24ddc3f3d50299228cd6d590ed18143a8e9bab40fe3fb400e293e"
+          },
+          {
+            "path": "assets/audio/lesson-12/line-02.m4a",
+            "bytes": 10758,
+            "sha256": "950fc6cfd82422ab7152ae5bac30664d3464b851ba75387dfe11d8755597ed9d"
+          },
+          {
+            "path": "assets/audio/lesson-12/line-03.m4a",
+            "bytes": 9706,
+            "sha256": "73dc453e9b6201832e18ce51c3ac3360fff1c7804973adf4ae2089f6edd304fe"
+          },
+          {
+            "path": "assets/audio/lesson-12/line-04.m4a",
+            "bytes": 11649,
+            "sha256": "562397a42ab37b2ea7abb0f1227bfa35dfeb7eba93fb98f7e081a8ccf7825486"
+          },
+          {
+            "path": "assets/audio/lesson-12/line-05.m4a",
+            "bytes": 12201,
+            "sha256": "a28dd505b16b027fa19dd54733651de1255770c0f26e8a0e6ec0f059eb2998af"
+          },
+          {
+            "path": "assets/audio/lesson-12/line-06.m4a",
+            "bytes": 11281,
+            "sha256": "75f23b20cdc3c4c72af4e08aa44db9ba815e6f66bd64302caf32ce15997ac345"
+          }
+        ]
+      }
+    }
+  ]
+}

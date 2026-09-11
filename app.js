@@ -1,6 +1,6 @@
 const lessons = [
   {
-    category:'home', unit:'家庭生活 · 早晨', title:'Good Morning!', zhTitle:'起床问早安', goal:'学会起床后问候家人，并回答自己的状态。', image:'assets/lesson-01.png',
+    category:'home', unit:'家庭生活 · 早晨', title:'Good Morning!', zhTitle:'起床问早安', goal:'学会起床后问候家人，并回答自己的状态。', image:'assets/images/lesson-01.webp',
     intro:'第一课发生在早晨。我们要学会向家人说早安，问对方睡得怎么样，还要说自己已经准备好起床了。',
     questions:['Who can you see?','Is it morning?','How does the child feel?'],
     lines:[['Mom','Good morning, Mia.','早上好，米娅。'],['Mia','Good morning, Mom.','早上好，妈妈。'],['Mom','Did you sleep well?','你睡得好吗？'],['Mia','Yes, I did.','是的，睡得很好。'],['Mom','Time to get up.','该起床了。'],['Mia',"Okay. I'm ready!",'好的，我准备好了！']],
@@ -11,7 +11,7 @@ const lessons = [
     check:'不看文字，能自然说出“Good morning”并完成至少两轮问答。'
   },
   {
-    category:'home', unit:'家庭生活 · 早餐', title:'Can I Have Some Milk?', zhTitle:'早餐礼貌请求', goal:'在餐桌上礼貌地要食物，并表达感谢。', image:'assets/lesson-02.png',
+    category:'home', unit:'家庭生活 · 早餐', title:'Can I Have Some Milk?', zhTitle:'早餐礼貌请求', goal:'在餐桌上礼貌地要食物，并表达感谢。', image:'assets/images/lesson-02.webp',
     intro:'第二课发生在早餐桌。我们练习用 Can I have 来提出请求，用 Here you are 来递东西，最后别忘了说谢谢。',
     questions:['What is on the table?','What does the child want?','What do you like for breakfast?'],
     lines:[['Child','Can I have some milk, please?','请给我一些牛奶，可以吗？'],['Dad','Sure. Here you are.','当然，给你。'],['Child','Thank you, Dad.','谢谢你，爸爸。'],['Dad',"You're welcome.",'不客气。'],['Dad','Do you want some bread?','你想吃些面包吗？'],['Child','Yes, please.','好的，谢谢。']],
@@ -22,7 +22,7 @@ const lessons = [
     check:'能用完整句提出请求，并在收到物品后主动说 Thank you。'
   },
   {
-    category:'home', unit:'家庭生活 · 穿衣', title:"It's Raining Today", zhTitle:'天气与穿衣', goal:'说出天气，并用 put on 提醒穿戴。', image:'assets/lesson-03.png',
+    category:'home', unit:'家庭生活 · 穿衣', title:"It's Raining Today", zhTitle:'天气与穿衣', goal:'说出天气，并用 put on 提醒穿戴。', image:'assets/images/lesson-03.webp',
     intro:'第三课是下雨天出门。我们要说今天的天气，还要学会提醒别人穿雨衣、带雨伞。',
     questions:['What is the weather like?','What should the child wear?','Can you find the umbrella?'],
     lines:[['Mom',"It's raining today.",'今天下雨。'],['Child','I see the rain.','我看到雨了。'],['Mom','Put on your raincoat.','穿上你的雨衣。'],['Child','Where are my boots?','我的雨靴在哪里？'],['Mom',"They're by the door.",'它们在门边。'],['Child',"Got them. Let's go!",'拿到了，我们走吧！']],
@@ -33,7 +33,7 @@ const lessons = [
     check:'能说出 It’s raining，并听懂、说出至少两个 Put on your… 句子。'
   },
   {
-    category:'home', unit:'家庭生活 · 帮忙', title:'Can I Help?', zhTitle:'主动帮助家人', goal:'主动询问能否帮忙，并听懂简单家务指令。', image:'assets/lesson-04.png',
+    category:'home', unit:'家庭生活 · 帮忙', title:'Can I Help?', zhTitle:'主动帮助家人', goal:'主动询问能否帮忙，并听懂简单家务指令。', image:'assets/images/lesson-04.webp',
     intro:'第四课是在家准备晚餐。我们练习主动问 Can I help，再听懂摆盘子、拿杯子这样的简单任务。',
     questions:['What are they doing?','What can the child carry?','How do you help at home?'],
     lines:[['Child','Can I help?','我可以帮忙吗？'],['Mom','Yes, please.','可以，谢谢。'],['Mom','Set the table, please.','请摆好餐桌。'],['Child','Okay. I can do it.','好的，我能做到。'],['Mom','Please bring two cups.','请拿两个杯子来。'],['Child','Here they are!','拿来了！']],
@@ -44,7 +44,7 @@ const lessons = [
     check:'能主动说 Can I help，并正确完成一个英语家务指令。'
   },
   {
-    category:'home', unit:'家庭生活 · 找东西', title:'Where Is My Teddy?', zhTitle:'寻找物品', goal:'询问物品在哪里，并使用 in、on、under 回答。', image:'assets/lesson-05.png',
+    category:'home', unit:'家庭生活 · 找东西', title:'Where Is My Teddy?', zhTitle:'寻找物品', goal:'询问物品在哪里，并使用 in、on、under 回答。', image:'assets/images/lesson-05.webp',
     intro:'第五课要在客厅找玩具。我们练习 Where is my，和用 on、in、under 说清楚位置。',
     questions:['What is the child looking for?','What is under the chair?','Where is the blue book?'],
     lines:[['Child','Where is my teddy bear?','我的泰迪熊在哪里？'],['Dad','Is it on the sofa?','它在沙发上吗？'],['Child',"No, it isn't.",'不，它不在那里。'],['Dad','Look under the chair.','看看椅子下面。'],['Child','There it is!','它在那里！'],['Child','Thank you for helping me.','谢谢你帮我。']],
@@ -55,7 +55,7 @@ const lessons = [
     check:'能提出 Where is…，并用一个完整位置句回答。'
   },
   {
-    category:'home', unit:'家庭生活 · 感受', title:'How Do You Feel?', zhTitle:'表达感受', goal:'询问和表达开心、难过、疲倦等日常感受。', image:'assets/lesson-06.png',
+    category:'home', unit:'家庭生活 · 感受', title:'How Do You Feel?', zhTitle:'表达感受', goal:'询问和表达开心、难过、疲倦等日常感受。', image:'assets/images/lesson-06.webp',
     intro:'第六课是在放学回家以后。我们学会问对方感觉怎么样，也学会说自己累了、饿了或很开心。',
     questions:['How does the child feel?','What can the parent do?','How do you feel now?'],
     lines:[['Dad','How do you feel?','你感觉怎么样？'],['Child',"I'm a little tired.",'我有一点累。'],['Dad','Do you want to rest?','你想休息一下吗？'],['Child','Yes, please.','好，谢谢。'],['Dad',"I'll get you some water.",'我给你拿些水。'],['Child','Thanks, Dad.','谢谢，爸爸。']],
@@ -66,7 +66,7 @@ const lessons = [
     check:'能用 I’m… 表达一种真实感受，并听懂对方提出的帮助。'
   },
   {
-    category:'school', unit:'学校生活 · 见面', title:'Nice to Meet You', zhTitle:'认识新同学', goal:'介绍姓名、问候新同学，并礼貌回应。', image:'assets/lesson-07.png',
+    category:'school', unit:'学校生活 · 见面', title:'Nice to Meet You', zhTitle:'认识新同学', goal:'介绍姓名、问候新同学，并礼貌回应。', image:'assets/images/lesson-07.webp',
     intro:'第七课来到教室，认识一位新同学。我们要会说自己的名字，问别人叫什么，并说很高兴认识你。',
     questions:['Where are the children?','Are they meeting for the first time?','What would you say first?'],
     lines:[['Ben',"Hi! I'm Ben.",'你好！我是本。'],['Mia',"Hi, Ben. I'm Mia.",'你好，本。我是米娅。'],['Ben',"What's your name?",'你叫什么名字？'],['Mia','My name is Mia.','我叫米娅。'],['Ben','Nice to meet you.','很高兴认识你。'],['Mia','Nice to meet you, too.','我也很高兴认识你。']],
@@ -77,7 +77,7 @@ const lessons = [
     check:'能完成“问姓名—答姓名—礼貌结束”的三步对话。'
   },
   {
-    category:'school', unit:'学校生活 · 文具', title:'May I Borrow a Pencil?', zhTitle:'借用文具', goal:'礼貌借文具、递出物品并归还致谢。', image:'assets/lesson-08.png',
+    category:'school', unit:'学校生活 · 文具', title:'May I Borrow a Pencil?', zhTitle:'借用文具', goal:'礼貌借文具、递出物品并归还致谢。', image:'assets/images/lesson-08.webp',
     intro:'第八课练习向同桌借文具。May I borrow 是非常实用的礼貌问法，借到以后要说谢谢。',
     questions:['What does the child need?','What school things can you see?','How do we ask politely?'],
     lines:[['Mia','May I borrow a pencil?','我可以借一支铅笔吗？'],['Ben','Sure. Here you are.','当然，给你。'],['Mia','Thank you.','谢谢。'],['Ben',"You're welcome.",'不客气。'],['Mia','Here is your pencil.','这是你的铅笔。'],['Ben','Thanks!','谢谢！']],
@@ -88,7 +88,7 @@ const lessons = [
     check:'能礼貌借一种文具，并完整说出感谢与回应。'
   },
   {
-    category:'school', unit:'学校生活 · 求助', title:"I Don't Understand", zhTitle:'课堂上请求帮助', goal:'听不懂时敢于说明，并请老师再说一遍。', image:'assets/lesson-09.png',
+    category:'school', unit:'学校生活 · 求助', title:"I Don't Understand", zhTitle:'课堂上请求帮助', goal:'听不懂时敢于说明，并请老师再说一遍。', image:'assets/images/lesson-09.webp',
     intro:'第九课教孩子在课堂上真正有用的一句话：听不懂时不要沉默，可以礼貌地请老师再说一次。',
     questions:['Who needs help?','What is the teacher doing?','What can you say when you do not understand?'],
     lines:[['Teacher','Open your book, please.','请打开书。'],['Child',"Sorry, I don't understand.",'对不起，我没听懂。'],['Teacher',"That's okay.",'没关系。'],['Child','Can you say it again, please?','请您再说一遍，可以吗？'],['Teacher','Open your book.','打开你的书。'],['Child','Oh, I understand now.','哦，我现在明白了。']],
@@ -99,7 +99,7 @@ const lessons = [
     check:'遇到没听懂的内容，能主动使用至少一句求助表达。'
   },
   {
-    category:'school', unit:'学校生活 · 课间', title:'Can I Play with You?', zhTitle:'加入同伴游戏', goal:'礼貌加入游戏，并使用轮流、一起玩的表达。', image:'assets/lesson-10.png',
+    category:'school', unit:'学校生活 · 课间', title:'Can I Play with You?', zhTitle:'加入同伴游戏', goal:'礼貌加入游戏，并使用轮流、一起玩的表达。', image:'assets/images/lesson-10.webp',
     intro:'第十课发生在课间。我们练习怎样礼貌加入同学的游戏，以及怎样说轮到你、轮到我。',
     questions:['What game are they playing?','Does someone want to join?','How can we invite a friend?'],
     lines:[['Mia','Can I play with you?','我可以和你们一起玩吗？'],['Ben','Sure! Come and play.','当然！来一起玩吧。'],['Mia','What are you playing?','你们在玩什么？'],['Ben','We are playing catch.','我们在玩接球。'],['Ben',"It's your turn.",'轮到你了。'],['Mia','Great! Here I go!','太好了！我要开始了！']],
@@ -110,7 +110,7 @@ const lessons = [
     check:'能礼貌申请加入活动，并理解 Your turn。'
   },
   {
-    category:'school', unit:'学校生活 · 午餐', title:'What Do You Have for Lunch?', zhTitle:'聊聊午餐', goal:'说出自己的午餐，并询问、回应食物喜好。', image:'assets/lesson-11.png',
+    category:'school', unit:'学校生活 · 午餐', title:'What Do You Have for Lunch?', zhTitle:'聊聊午餐', goal:'说出自己的午餐，并询问、回应食物喜好。', image:'assets/images/lesson-11.webp',
     intro:'第十一课是在学校吃午餐。我们要会说自己带了什么，也可以问同学喜不喜欢某种食物。',
     questions:['What food can you see?','What does each child have?','What do you have for lunch?'],
     lines:[['Ben','What do you have for lunch?','你的午餐有什么？'],['Mia','I have rice and chicken.','我有米饭和鸡肉。'],['Mia','What about you?','你呢？'],['Ben','I have a sandwich and an apple.','我有一个三明治和一个苹果。'],['Mia','Do you like apples?','你喜欢苹果吗？'],['Ben','Yes, I do!','是的，我喜欢！']],
@@ -121,7 +121,7 @@ const lessons = [
     check:'能用 I have… 说出两种食物，并向同伴提出一个问题。'
   },
   {
-    category:'school', unit:'学校生活 · 放学', title:'How Was School?', zhTitle:'讲讲今天在学校', goal:'用简短句回顾一天，表达感受和最喜欢的部分。', image:'assets/lesson-12.png',
+    category:'school', unit:'学校生活 · 放学', title:'How Was School?', zhTitle:'讲讲今天在学校', goal:'用简短句回顾一天，表达感受和最喜欢的部分。', image:'assets/images/lesson-12.webp',
     intro:'最后一课把学校生活带回家。我们练习回答今天怎么样、学到了什么，以及最喜欢哪一部分。',
     questions:['Where are they now?','How does the child feel?','What might the child talk about?'],
     lines:[['Mom','How was school today?','今天在学校怎么样？'],['Child','It was great!','很棒！'],['Mom','What did you learn?','你学了什么？'],['Child','I learned about animals.','我学了动物的知识。'],['Mom','What was your favorite part?','你最喜欢哪一部分？'],['Child','Art class was my favorite.','美术课是我最喜欢的。']],
@@ -133,13 +133,20 @@ const lessons = [
   }
 ];
 
-lessons.forEach((lesson, index) => {
-  lesson.image = `assets/images/lesson-${String(index + 1).padStart(2, '0')}.png`;
-});
-
 let current = 0;
 let filter = 'all';
 let playingButton = null;
+let playbackVersion = 0;
+let recordingLine = 0;
+let mediaRecorder = null;
+let recordingStream = null;
+let recordingChunks = [];
+let recordingStartedAt = 0;
+let recordingClock = null;
+let recordingLimitTimer = null;
+let recordingRequestVersion = 0;
+let activeRecordingKey = null;
+const savedRecordings = new Map();
 const $ = id => document.getElementById(id);
 
 function filteredIndexes(){
@@ -164,8 +171,8 @@ function renderLesson(){
   $('lessonNumber').textContent = String(current+1).padStart(2,'0');
   $('sceneImage').src = l.image;
   $('sceneImage').alt = `${l.zhTitle}场景图：${l.questions[0]}`;
-  $('sceneQuestions').innerHTML = l.questions.map(q => `<span class="question-chip">${q}</span>`).join('');
-  $('dialogue').innerHTML = l.lines.map((line, idx) => `<button class="dialogue-line" data-line="${idx}"><span class="speaker">${line[0]}</span><span><span class="english">${line[1]}</span><span class="chinese-text">${line[2]}</span></span><span class="play-mark">▶</span></button>`).join('');
+  $('sceneQuestions').innerHTML = l.questions.map((q, idx) => `<button class="question-chip" data-question="${idx}" aria-pressed="false">${q}</button>`).join('');
+  $('dialogue').innerHTML = l.lines.map((line, idx) => `<button class="dialogue-line" data-line="${idx}" aria-pressed="false"><span class="speaker">${line[0]}</span><span><span class="english">${line[1]}</span><span class="chinese-text">${line[2]}</span></span><span class="play-mark" aria-hidden="true"><span class="play-triangle">▶</span><span class="playing-bars"><i></i><i></i><i></i></span></span></button>`).join('');
   $('pronunciationTips').innerHTML = l.tips.map(t => `<div class="pronunciation-item"><span class="sound-word">${t[0]}</span><p>${t[1]}</p></div>`).join('');
   $('swapPattern').textContent = l.pattern;
   $('swapWords').innerHTML = l.swaps.map(w => `<button class="swap-word">${w}</button>`).join('');
@@ -174,24 +181,256 @@ function renderLesson(){
   $('prevLesson').disabled = current === 0;
   $('nextLesson').disabled = current === lessons.length - 1;
   $('progressText').textContent = `${current+1} / ${lessons.length}`;
-  document.querySelectorAll('.dialogue-line').forEach(btn => btn.addEventListener('click', () => {
+  recordingLine = Math.min(recordingLine, l.lines.length - 1);
+  renderRecordingPractice();
+  document.querySelectorAll('.question-chip').forEach(btn => {
+    const question = l.questions[Number(btn.dataset.question)];
+    btn.dataset.spokenText = question;
+    btn.setAttribute('aria-label', `朗读：${question}`);
+    btn.addEventListener('click', () => speakEnglish(question, .9, btn, 'Teacher'));
+  });
+  document.querySelectorAll('.dialogue-line').forEach(btn => {
     const lineIndex = Number(btn.dataset.line);
     const line = l.lines[lineIndex];
-    const lessonNo = String(current + 1).padStart(2, '0');
-    const lineNo = String(lineIndex + 1).padStart(2, '0');
-    playAudioFiles(
-      [`assets/audio/lesson-${lessonNo}/line-${lineNo}.m4a`],
-      btn,
-      () => speakEnglish(line[1], .96, btn, line[0]),
-      {status:'正在播放 Qwen3-TTS 角色音频…', missing:'这句 AI 音频尚未生成，已使用系统声音。'}
-    );
-  }));
+    btn.dataset.spokenText = line[1];
+    btn.setAttribute('aria-label', `播放：${line[1]}`);
+    btn.addEventListener('click', () => {
+      selectRecordingLine(lineIndex);
+      const lessonNo = String(current + 1).padStart(2, '0');
+      const lineNo = String(lineIndex + 1).padStart(2, '0');
+      playAudioFiles(
+        [`assets/audio/lesson-${lessonNo}/line-${lineNo}.m4a`],
+        btn,
+        version => speakEnglish(line[1], .96, btn, line[0], version),
+        {status:'正在播放 Qwen3-TTS 角色音频…', missing:'这句 AI 音频尚未生成，已使用系统声音。'}
+      );
+    });
+  });
   document.querySelectorAll('.swap-word').forEach(btn => btn.addEventListener('click', () => speakEnglish(btn.textContent, .9, btn, 'Teacher')));
   renderList();
   window.scrollTo({top:0, behavior:'smooth'});
 }
 
-function selectLesson(index){ current = index; renderLesson(); }
+function selectLesson(index){
+  recordingRequestVersion += 1;
+  recordingLine = 0;
+  current = index;
+  renderLesson();
+}
+
+function currentRecordingKey(){
+  return `${current + 1}:${recordingLine + 1}`;
+}
+
+function renderRecordingPractice(statusMessage=null){
+  const line = lessons[current].lines[recordingLine];
+  const saved = savedRecordings.get(currentRecordingKey());
+  $('recordingLineMeta').textContent = `第 ${recordingLine + 1} 句 · ${line[0]}`;
+  $('recordingProgress').textContent = `${recordingLine + 1} / ${lessons[current].lines.length}`;
+  $('recordingEnglish').textContent = line[1];
+  $('recordingChinese').textContent = line[2];
+  $('recordingPrev').disabled = recordingLine === 0;
+  $('recordingNext').disabled = recordingLine === lessons[current].lines.length - 1;
+  $('recordingPlayback').disabled = !saved;
+  document.querySelectorAll('.dialogue-line').forEach((button, index) => {
+    button.classList.toggle('practice-target', index === recordingLine);
+  });
+  if (statusMessage !== null) {
+    $('recordingStatus').textContent = statusMessage;
+  } else if (saved) {
+    $('recordingStatus').textContent = `本句已有 ${saved.duration.toFixed(1)} 秒录音，可以播放自己的录音，再播放原句对比。`;
+  } else {
+    $('recordingStatus').textContent = '先播放原句，再录下孩子的跟读，最后交替播放进行对比。';
+  }
+}
+
+function selectRecordingLine(index){
+  if (mediaRecorder && mediaRecorder.state === 'recording') return;
+  recordingLine = Math.max(0, Math.min(index, lessons[current].lines.length - 1));
+  renderRecordingPractice();
+}
+
+function changeRecordingLine(offset){
+  stopSpeech(false);
+  selectRecordingLine(recordingLine + offset);
+}
+
+function setRecordingControls(recording){
+  const toggle = $('recordingToggle');
+  toggle.disabled = false;
+  toggle.classList.toggle('recording', recording);
+  toggle.setAttribute('aria-pressed', String(recording));
+  toggle.querySelector('.record-label').textContent = recording ? '停止录音' : '开始录音';
+  document.querySelectorAll('.audio-btn, .question-chip, .dialogue-line, .swap-word, .lesson-item button, .nav-tab, #prevLesson, #nextLesson, #recordingOriginal, #recordingPlayback, #recordingPrev, #recordingNext').forEach(button => {
+    button.disabled = recording;
+  });
+  if (!recording) {
+    $('prevLesson').disabled = current === 0;
+    $('nextLesson').disabled = current === lessons.length - 1;
+    $('recordingPrev').disabled = recordingLine === 0;
+    $('recordingNext').disabled = recordingLine === lessons[current].lines.length - 1;
+    $('recordingPlayback').disabled = !savedRecordings.has(currentRecordingKey());
+  }
+}
+
+function preferredRecordingMimeType(){
+  if (!window.MediaRecorder || typeof MediaRecorder.isTypeSupported !== 'function') return '';
+  return [
+    'audio/webm;codecs=opus',
+    'audio/mp4',
+    'audio/webm',
+  ].find(type => MediaRecorder.isTypeSupported(type)) || '';
+}
+
+function stopRecordingTracks(stream){
+  if (stream) stream.getTracks().forEach(track => track.stop());
+}
+
+function clearRecordingTimers(){
+  if (recordingClock) clearInterval(recordingClock);
+  if (recordingLimitTimer) clearTimeout(recordingLimitTimer);
+  recordingClock = null;
+  recordingLimitTimer = null;
+}
+
+async function startRecording(){
+  if (!window.isSecureContext || !navigator.mediaDevices || !navigator.mediaDevices.getUserMedia || !window.MediaRecorder) {
+    $('recordingStatus').textContent = location.protocol === 'file:'
+      ? '录音需要通过本地服务器打开。请运行 python3 -m http.server 8000 后访问 localhost:8000。'
+      : '当前浏览器不支持录音，请使用最新版 Safari、Chrome 或 Edge。';
+    return;
+  }
+
+  stopSpeech(false);
+  const requestVersion = ++recordingRequestVersion;
+  const requestedKey = currentRecordingKey();
+  const toggle = $('recordingToggle');
+  toggle.disabled = true;
+  toggle.querySelector('.record-label').textContent = '请求麦克风…';
+  $('recordingStatus').textContent = '请允许浏览器使用麦克风；录音不会上传。';
+
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({
+      audio: {echoCancellation: true, noiseSuppression: true, autoGainControl: true},
+      video: false,
+    });
+    if (requestVersion !== recordingRequestVersion || requestedKey !== currentRecordingKey()) {
+      stopRecordingTracks(stream);
+      toggle.disabled = false;
+      toggle.querySelector('.record-label').textContent = '开始录音';
+      renderRecordingPractice();
+      return;
+    }
+
+    const mimeType = preferredRecordingMimeType();
+    recordingStream = stream;
+    const recorder = new MediaRecorder(stream, mimeType ? {mimeType} : undefined);
+    mediaRecorder = recorder;
+    recordingChunks = [];
+    recordingStartedAt = performance.now();
+    activeRecordingKey = requestedKey;
+
+    recorder.ondataavailable = event => {
+      if (event.data && event.data.size > 0) recordingChunks.push(event.data);
+    };
+    recorder.onerror = () => {
+      $('recordingStatus').textContent = '录音发生错误，请检查麦克风后重试。';
+    };
+    recorder.onstop = () => {
+      const duration = Math.max(.1, (performance.now() - recordingStartedAt) / 1000);
+      const blob = new Blob(recordingChunks, {type: recorder.mimeType || mimeType || 'audio/webm'});
+      const key = activeRecordingKey;
+      clearRecordingTimers();
+      stopRecordingTracks(recordingStream);
+      recordingStream = null;
+      mediaRecorder = null;
+      recordingChunks = [];
+      activeRecordingKey = null;
+      setRecordingControls(false);
+
+      if (blob.size > 0 && key) {
+        const previous = savedRecordings.get(key);
+        if (previous) URL.revokeObjectURL(previous.url);
+        savedRecordings.set(key, {url: URL.createObjectURL(blob), duration, type: blob.type});
+        renderRecordingPractice(`录音完成，共 ${duration.toFixed(1)} 秒。现在播放自己的录音，再播放原句进行对比。`);
+      } else {
+        renderRecordingPractice('没有录到声音，请靠近麦克风后重试。');
+      }
+    };
+
+    recorder.start(250);
+    setRecordingControls(true);
+    $('recordingStatus').textContent = '正在录音 0.0 秒；朗读完成后点击“停止录音”。';
+    recordingClock = setInterval(() => {
+      const seconds = (performance.now() - recordingStartedAt) / 1000;
+      $('recordingStatus').textContent = `正在录音 ${seconds.toFixed(1)} 秒；朗读完成后点击“停止录音”。`;
+    }, 100);
+    recordingLimitTimer = setTimeout(stopRecording, 15000);
+  } catch (error) {
+    toggle.disabled = false;
+    toggle.querySelector('.record-label').textContent = '开始录音';
+    stopRecordingTracks(recordingStream);
+    recordingStream = null;
+    mediaRecorder = null;
+    const messages = {
+      NotAllowedError: '麦克风权限未开启，请在浏览器设置中允许本页面使用麦克风。',
+      NotFoundError: '没有找到可用的麦克风，请连接麦克风后重试。',
+      NotReadableError: '麦克风正被其他应用占用，请关闭占用麦克风的应用后重试。',
+    };
+    $('recordingStatus').textContent = messages[error.name] || '无法开始录音，请检查浏览器和麦克风设置。';
+  }
+}
+
+function stopRecording(){
+  if (mediaRecorder && mediaRecorder.state === 'recording') {
+    mediaRecorder.stop();
+    $('recordingStatus').textContent = '正在保存录音…';
+  }
+}
+
+function toggleRecording(){
+  if (mediaRecorder && mediaRecorder.state === 'recording') stopRecording();
+  else startRecording();
+}
+
+function playRecordingOriginal(){
+  const line = lessons[current].lines[recordingLine];
+  const lessonNo = String(current + 1).padStart(2, '0');
+  const lineNo = String(recordingLine + 1).padStart(2, '0');
+  playAudioFiles(
+    [`assets/audio/lesson-${lessonNo}/line-${lineNo}.m4a`],
+    $('recordingOriginal'),
+    version => speakEnglish(line[1], .96, $('recordingOriginal'), line[0], version),
+    {
+      statusElement: $('recordingStatus'),
+      status: '正在播放原句，请仔细听语音和节奏…',
+      complete: '原句播放完成。现在点击“开始录音”进行跟读。',
+      stopped: '原句播放已停止。',
+    }
+  );
+}
+
+function playSavedRecording(){
+  const saved = savedRecordings.get(currentRecordingKey());
+  if (!saved) {
+    $('recordingStatus').textContent = '请先录下本句跟读。';
+    return;
+  }
+  playAudioFiles(
+    [saved.url],
+    $('recordingPlayback'),
+    () => {
+      stopSpeech(false);
+      $('recordingStatus').textContent = '无法播放这段录音，请重新录制。';
+    },
+    {
+      statusElement: $('recordingStatus'),
+      status: '正在播放我的录音…',
+      complete: '我的录音播放完成。现在再播放原句进行对比。',
+      stopped: '我的录音播放已停止。',
+    }
+  );
+}
 
 const voiceProfiles = {
   childGirl: ['Sandy', 'Flo', 'Shelley', 'Ava', 'Samantha', 'Zoe'],
@@ -243,63 +482,141 @@ function makeUtterance(text, lang, rate=.95, speaker='Teacher'){
   return u;
 }
 
+function updatePlaybackButton(button, playing){
+  if (!button) return;
+  button.classList.toggle('playing', playing);
+  button.setAttribute('aria-pressed', String(playing));
+  if (button === $('recordingOriginal')) {
+    button.querySelector('.practice-label').textContent = playing ? '停止播放' : '播放原句';
+    button.setAttribute('aria-label', playing ? '停止播放原句' : '播放原句');
+  }
+  if (button === $('recordingPlayback')) {
+    button.querySelector('.practice-label').textContent = playing ? '停止播放' : '播放我的录音';
+    button.setAttribute('aria-label', playing ? '停止播放我的录音' : '播放我的录音');
+  }
+  if (button.classList.contains('dialogue-line')) {
+    const text = button.dataset.spokenText || '';
+    button.setAttribute('aria-label', `${playing ? '停止播放' : '播放'}：${text}`);
+  }
+  if (button.classList.contains('question-chip')) {
+    const text = button.dataset.spokenText || '';
+    button.setAttribute('aria-label', `${playing ? '停止朗读' : '朗读'}：${text}`);
+  }
+}
+
 function setPlaying(button, on){
-  document.querySelectorAll('.playing').forEach(el => el.classList.remove('playing'));
+  document.querySelectorAll('.playing').forEach(el => updatePlaybackButton(el, false));
   playingButton = on ? button : null;
-  if (playingButton) playingButton.classList.add('playing');
-  $('stopBtn').disabled = !on;
+  if (playingButton) updatePlaybackButton(playingButton, true);
+  $('stopBtn').disabled = !(on && button && button.classList.contains('audio-btn'));
+}
+
+function startPlayback(button, continuationVersion=null){
+  if (continuationVersion !== null) {
+    if (continuationVersion !== playbackVersion) return null;
+    setPlaying(button, true);
+    return continuationVersion;
+  }
+  if (playingButton === button) {
+    stopSpeech();
+    return null;
+  }
+  recordingRequestVersion += 1;
+  stopSpeech(false);
+  setPlaying(button, true);
+  return playbackVersion;
+}
+
+function isCurrentPlayback(version){
+  return version === playbackVersion;
 }
 
 function stopSpeech(announce=true){
+  const stoppedButton = playingButton;
+  playbackVersion += 1;
   if (window.currentCourseTimer) {
     clearTimeout(window.currentCourseTimer);
     window.currentCourseTimer = null;
   }
   if (window.currentCourseAudio) {
-    window.currentCourseAudio.pause();
+    const audio = window.currentCourseAudio;
     window.currentCourseAudio = null;
+    audio.onplaying = null;
+    audio.onended = null;
+    audio.onerror = null;
+    audio.pause();
+    try { audio.currentTime = 0; } catch (_) {}
   }
-  if ('speechSynthesis' in window) speechSynthesis.cancel();
+  if ('speechSynthesis' in window && (speechSynthesis.speaking || speechSynthesis.pending || speechSynthesis.paused)) {
+    speechSynthesis.cancel();
+  }
   setPlaying(null, false);
+  if (stoppedButton === $('recordingOriginal')) {
+    $('recordingStatus').textContent = '原句播放已停止。';
+  } else if (stoppedButton === $('recordingPlayback')) {
+    $('recordingStatus').textContent = '我的录音播放已停止。';
+  }
   if (announce && $('voiceStatus')) $('voiceStatus').textContent = '已停止。点击按钮可重新播放。';
 }
 
-function speakEnglish(text, rate, button, speaker='Teacher'){
+function speakEnglish(text, rate, button, speaker='Teacher', continuationVersion=null){
   if (!('speechSynthesis' in window)) return unsupported();
-  speechSynthesis.cancel();
+  const version = startPlayback(button, continuationVersion);
+  if (version === null) return;
   const u = makeUtterance(text, 'en-US', rate, speaker);
-  setPlaying(button, true);
   $('voiceStatus').textContent = `正在播放 ${speaker} 的自然美式英语…`;
-  u.onend = () => { setPlaying(null, false); $('voiceStatus').textContent = '播放完成。可以再听一次或换一种速度。'; };
-  u.onerror = () => unsupported();
+  u.onend = () => {
+    if (!isCurrentPlayback(version)) return;
+    setPlaying(null, false);
+    $('voiceStatus').textContent = '播放完成。可以再听一次或换一种速度。';
+  };
+  u.onerror = () => {
+    if (isCurrentPlayback(version)) unsupported();
+  };
   speechSynthesis.speak(u);
 }
 
-function speakSequence(items, button){
+function speakSequence(items, button, continuationVersion=null){
   if (!('speechSynthesis' in window)) return unsupported();
-  speechSynthesis.cancel();
-  setPlaying(button, true);
+  const version = startPlayback(button, continuationVersion);
+  if (version === null) return;
   let idx = 0;
   const next = () => {
+    window.currentCourseTimer = null;
+    if (!isCurrentPlayback(version)) return;
     if (idx >= items.length) { setPlaying(null, false); $('voiceStatus').textContent = '播放完成。轮到孩子开口啦！'; return; }
     const item = items[idx++];
     const u = makeUtterance(item.text, item.lang, item.rate, item.speaker);
-    u.onend = () => setTimeout(next, item.pause || 180);
-    u.onerror = () => { setPlaying(null, false); unsupported(); };
+    u.onend = () => {
+      if (!isCurrentPlayback(version)) return;
+      window.currentCourseTimer = setTimeout(next, item.pause || 180);
+    };
+    u.onerror = () => {
+      if (!isCurrentPlayback(version)) return;
+      unsupported();
+    };
     speechSynthesis.speak(u);
   };
   next();
 }
 
 function unsupported(){
-  setPlaying(null, false);
+  stopSpeech(false);
   $('voiceStatus').textContent = '当前浏览器没有可用的朗读声音。请用最新版 Safari、Chrome 或 Edge 打开。';
 }
 
 function playMode(mode, button){
   const l = lessons[current];
   const lessonNo = String(current + 1).padStart(2, '0');
-  const fallback = () => playSynthMode(mode, button);
+  const fallback = version => playSynthMode(mode, button, version);
+  if (mode === 'chinese') {
+    return playAudioFiles(
+      [`assets/audio/lesson-${lessonNo}/chinese.m4a`],
+      button,
+      fallback,
+      {status:'正在播放中文讲解…', missing:'本课中文讲解音频缺失，已使用系统声音。'}
+    );
+  }
   if (['slow', 'normal', 'fast'].includes(mode)) {
     const files = l.lines.map((_, index) =>
       `assets/audio/lesson-${lessonNo}/line-${String(index + 1).padStart(2, '0')}.m4a`
@@ -328,31 +645,41 @@ function playMode(mode, button){
 }
 
 function playAudioFiles(files, button, fallback, options={}){
+  const statusElement = options.statusElement || $('voiceStatus');
+  const wasPlaying = playingButton === button;
+  const version = startPlayback(button);
+  if (version === null) {
+    if (wasPlaying && options.stopped) statusElement.textContent = options.stopped;
+    return;
+  }
   let index = 0;
   let started = false;
   let fallbackCalled = false;
   const useFallback = () => {
-    if (fallbackCalled) return;
+    if (fallbackCalled || !isCurrentPlayback(version)) return;
     fallbackCalled = true;
-    fallback();
+    fallback(version);
   };
-  setPlaying(button, true);
   const playNext = () => {
+    window.currentCourseTimer = null;
+    if (!isCurrentPlayback(version)) return;
     if (index >= files.length) {
       window.currentCourseAudio = null;
       setPlaying(null, false);
-      $('voiceStatus').textContent = '播放完成。轮到孩子开口啦！';
+      statusElement.textContent = options.complete || '播放完成。轮到孩子开口啦！';
       return;
     }
     const audio = new Audio(files[index++]);
     audio.onplaying = () => {
       started = true;
-      $('voiceStatus').textContent = options.status || '正在播放课程包内的本地音频…';
+      statusElement.textContent = options.status || '正在播放课程包内的本地音频…';
     };
     audio.playbackRate = options.playbackRate || 1;
     audio.preservesPitch = true;
     audio.webkitPreservesPitch = true;
     audio.onended = () => {
+      if (!isCurrentPlayback(version)) return;
+      window.currentCourseAudio = null;
       if (options.pauseBetween && index < files.length) {
         window.currentCourseTimer = setTimeout(playNext, options.pauseBetween);
       } else {
@@ -360,26 +687,35 @@ function playAudioFiles(files, button, fallback, options={}){
       }
     };
     audio.onerror = () => {
-      setPlaying(null, false);
-      if (!started) useFallback();
-      else $('voiceStatus').textContent = options.missing || '部分本地音频缺失，请重新生成本课音频。';
+      if (!isCurrentPlayback(version)) return;
+      window.currentCourseAudio = null;
+      if (!started) {
+        useFallback();
+      } else {
+        stopSpeech(false);
+        statusElement.textContent = options.missing || '部分本地音频缺失，请重新生成本课音频。';
+      }
     };
-    audio.play().catch(() => { setPlaying(null, false); useFallback(); });
     window.currentCourseAudio = audio;
+    audio.play().catch(() => {
+      if (!isCurrentPlayback(version)) return;
+      window.currentCourseAudio = null;
+      useFallback();
+    });
   };
   playNext();
 }
 
-function playSynthMode(mode, button){
+function playSynthMode(mode, button, continuationVersion=null){
   const l = lessons[current];
   if (mode === 'chinese') {
     const text = `${l.zhTitle}。${l.intro} 今天的过关标准是：${l.check}`;
     $('voiceStatus').textContent = '正在播放中文讲解…';
-    return speakSequence([{text,lang:'zh-CN',rate:.92,speaker:'Teacher'}], button);
+    return speakSequence([{text,lang:'zh-CN',rate:.92,speaker:'Teacher'}], button, continuationVersion);
   }
   if (mode === 'tips') {
     $('voiceStatus').textContent = '正在播放发音技巧…';
-    return speakSequence(l.tipAudio.map(pair => ({text:pair[1],lang:pair[0]==='中文'?'zh-CN':'en-US',rate:pair[0]==='中文'?.9:.82,pause:300,speaker:'Teacher'})), button);
+    return speakSequence(l.tipAudio.map(pair => ({text:pair[1],lang:pair[0]==='中文'?'zh-CN':'en-US',rate:pair[0]==='中文'?.9:.82,pause:300,speaker:'Teacher'})), button, continuationVersion);
   }
   const rates = {slow:.82, normal:.96, fast:1.08};
   const pauses = {slow:700, normal:380, fast:220};
@@ -387,11 +723,16 @@ function playSynthMode(mode, button){
   speakSequence(l.lines.map((line, index) => ({
     text:line[1], lang:'en-US', rate:rates[mode], speaker:line[0],
     pause:pauses[mode] + (index < l.lines.length - 1 && l.lines[index + 1][0] !== line[0] ? 100 : 0)
-  })), button);
+  })), button, continuationVersion);
 }
 
 document.querySelectorAll('[data-audio]').forEach(btn => btn.addEventListener('click', () => playMode(btn.dataset.audio, btn)));
 $('stopBtn').addEventListener('click', stopSpeech);
+$('recordingPrev').addEventListener('click', () => changeRecordingLine(-1));
+$('recordingNext').addEventListener('click', () => changeRecordingLine(1));
+$('recordingOriginal').addEventListener('click', playRecordingOriginal);
+$('recordingToggle').addEventListener('click', toggleRecording);
+$('recordingPlayback').addEventListener('click', playSavedRecording);
 $('prevLesson').addEventListener('click', () => selectLesson(Math.max(0,current-1)));
 $('nextLesson').addEventListener('click', () => selectLesson(Math.min(lessons.length-1,current+1)));
 $('teacherToggle').addEventListener('click', e => {
@@ -404,11 +745,22 @@ document.querySelectorAll('.nav-tab').forEach(btn => btn.addEventListener('click
   filter = btn.dataset.filter;
   document.querySelectorAll('.nav-tab').forEach(b => b.classList.toggle('active', b===btn));
   const indexes = filteredIndexes();
-  if (!indexes.includes(current)) current = indexes[0];
+  if (!indexes.includes(current)) {
+    current = indexes[0];
+    recordingLine = 0;
+    recordingRequestVersion += 1;
+  }
   renderLesson();
 }));
 
+window.addEventListener('beforeunload', () => {
+  clearRecordingTimers();
+  stopRecordingTracks(recordingStream);
+  savedRecordings.forEach(recording => URL.revokeObjectURL(recording.url));
+});
+
 if ('speechSynthesis' in window) {
+  speechSynthesis.getVoices();
   speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
 }
 renderLesson();

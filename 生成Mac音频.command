@@ -55,7 +55,8 @@ while IFS=$'\t' read -r filename lang rate text; do
   voice="$EN_VOICE"
   [ "$lang" = "zh" ] && voice="$ZH_VOICE"
   output="$OUT_DIR/$filename"
-  temp="$OUT_DIR/.${filename%.m4a}.aiff"
+  mkdir -p "$(dirname "$output")"
+  temp="${output%.m4a}.aiff"
   if [ -n "$voice" ]; then
     say -v "$voice" -r "$rate" -o "$temp" "$text"
   else
@@ -70,6 +71,10 @@ while IFS=$'\t' read -r filename lang rate text; do
   count=$((count + 1))
   echo "[$count/72] $filename"
 done < "$MANIFEST"
+
+if command -v node >/dev/null 2>&1; then
+  node "$BASE_DIR/tools/sync_resources.cjs"
+fi
 
 echo
 echo "完成：音频已放入 assets/audio。现在双击 index.html 即可使用。"

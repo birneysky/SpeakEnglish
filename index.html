@@ -85,6 +85,50 @@
         <p id="voiceStatus" class="voice-status">优先播放 Qwen3-TTS 本地角色音频；缺失时自动使用系统声音。</p>
       </section>
 
+      <section class="recording-card" aria-labelledby="recordingHeading">
+        <div class="section-heading compact">
+          <div>
+            <span class="eyebrow">RECORD & COMPARE</span>
+            <h2 id="recordingHeading">跟读录音，对比发音</h2>
+          </div>
+          <span class="recording-privacy">仅保存在当前浏览器</span>
+        </div>
+        <div class="recording-content">
+          <div class="recording-sentence">
+            <div class="recording-meta">
+              <span id="recordingLineMeta"></span>
+              <div class="recording-picker" aria-label="选择练习句子">
+                <button id="recordingPrev" aria-label="上一句">←</button>
+                <span id="recordingProgress"></span>
+                <button id="recordingNext" aria-label="下一句">→</button>
+              </div>
+            </div>
+            <strong id="recordingEnglish"></strong>
+            <span id="recordingChinese"></span>
+          </div>
+          <div class="recording-actions">
+            <button id="recordingOriginal" class="practice-audio-btn original-btn">
+              <span class="practice-play-icon" aria-hidden="true">
+                <span class="play-triangle">▶</span>
+                <span class="playing-bars"><i></i><i></i><i></i></span>
+              </span>
+              <span class="practice-label">播放原句</span>
+            </button>
+            <button id="recordingToggle" class="practice-audio-btn record-btn" aria-pressed="false">
+              <span class="record-dot" aria-hidden="true"></span><span class="record-label">开始录音</span>
+            </button>
+            <button id="recordingPlayback" class="practice-audio-btn playback-btn" disabled>
+              <span class="practice-play-icon" aria-hidden="true">
+                <span class="play-triangle">▶</span>
+                <span class="playing-bars"><i></i><i></i><i></i></span>
+              </span>
+              <span class="practice-label">播放我的录音</span>
+            </button>
+          </div>
+        </div>
+        <p id="recordingStatus" class="recording-status" aria-live="polite">先播放原句，再录下孩子的跟读，最后交替播放进行对比。</p>
+      </section>
+
       <div class="learning-grid">
         <section class="dialogue-panel">
           <div class="section-heading compact">
