@@ -1,0 +1,8 @@
+{
+  "name": "speak-english",
+  "private": true,
+  "scripts": {
+    "resources:update": "node tools/sync_resources.cjs",
+    "resources:check": "node tools/sync_resources.cjs --check"
+  }
+}

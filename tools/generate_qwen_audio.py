@@ -114,6 +114,9 @@ def main() -> int:
     args = parse_args()
     if platform.machine() != "arm64":
         raise RuntimeError("此生成器使用 MLX，只支持 Apple Silicon Mac。")
+    node = shutil.which("node")
+    if not node:
+        raise RuntimeError("未找到 Node.js，无法读取课程或更新资源清单。")
     lessons = load_lessons()
     profiles = load_profiles()
     jobs = select_jobs(lessons, args.lesson, args.speaker, args.output, args.overwrite)
@@ -184,6 +187,11 @@ def main() -> int:
     manifest_path.write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
+    )
+    subprocess.run(
+        [node, str(PROJECT_ROOT / "tools" / "sync_resources.cjs")],
+        cwd=PROJECT_ROOT,
+        check=True,
     )
     print(f"完成：已生成 {len(generated)} 个本地 AI 音频文件。")
     return 0
